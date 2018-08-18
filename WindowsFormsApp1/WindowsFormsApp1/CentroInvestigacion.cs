@@ -8,22 +8,23 @@ namespace WindowsFormsApp1
 {
     class CentroInvestigacion
     {
+        public String NME_CONVOCATORIA { get; set; }
+        public String ANO_CONVO { get; set; }
+        public String COD_GRUPO_GR { get; set; }
+        public String NME_GRUPO_GR { get; set; }
+        public String FCREACION_GR { get; set; }
+        public String NME_MUNICIPIO_GR { get; set; }
+        public String NME_DEPARTAMENTO_GR { get; set; }
+        public String NME_PAIS_GR { get; set; }
+        public String NME_REGION_GR { get; set; }
+        public String COD_DANE_GR { get; set; }
+        public String ID_AREA_CON_GR { get; set; }
+        public String NME_AREA_GR { get; set; }
+        public String NME_GRAN_AREA_GR { get; set; }
+        public String NME_CLASIFICACION_GR { get; set; }
+        public String ORDEN_CLAS_GR { get; set; }
+        public String EDAD_ANOS_GR { get; set; }
 
-        NME_CONVOCATORIA
-            ANO_CONVO
-            COD_GRUPO_GR
-            NME_GRUPO_GR
-            FCREACION_GR
-            NME_MUNICIPIO_GR
-            NME_DEPARTAMENTO_GR
-            NME_PAIS_GR
-            NME_REGION_GR
-            COD_DANE_GR
-            ID_AREA_CON_GR
-            NME_AREA_GR
-            NME_GRAN_AREA_GR
-            NME_CLASIFICACION_GR
-            ORDEN_CLAS_GR
-            EDAD_ANOS_GR
+
     }
 }
