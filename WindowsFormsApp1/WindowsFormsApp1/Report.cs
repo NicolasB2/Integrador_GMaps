@@ -14,26 +14,36 @@ namespace WindowsFormsApp1
         public static string REPORT_IAREAS = "REPORT_IAREAS";
         public static string REPORT_CLASIFICATION = "REPORT_CLASIFICATION";
 
-        Report()
-        {
+        private App main;
 
+        Report(App main )
+        {
+            this.main = main;
         }
 
-        public object getCitiesReport(object data)
+        public IEnumerable<InvestigationGroup> getCitiesReport(String cities)
         {
-            return null;
+            return  from n in main.GroupList
+                    where n.Country.Equals(cities)
+                    select n;
         }
-        public object getRegionsReport(object data)
+        public IEnumerable<InvestigationGroup> getRegionsReport(String region)
         {
-            return null;
+            return from n in main.GroupList
+                   where n.Region.Equals(region)
+                   select n;
         }
-        public object getInvestigationAreasReport(object data) 
+        public IEnumerable<InvestigationGroup> getInvestigationAreasReport(String area) 
         {
-            return null;
+            return from n in main.GroupList
+                   where n.OcdeArea.Equals(area)
+                   select n;
         }
-        public object getClasificationReport(object data)
+        public IEnumerable<InvestigationGroup> getClasificationReport(String clasification)
         {
-            return null;
+            return from n in main.GroupList
+                   where n.Clasification.Equals(clasification)
+                   select n;
         } 
     }
 }
