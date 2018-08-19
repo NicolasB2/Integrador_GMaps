@@ -16,5 +16,19 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void UC_Report_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
