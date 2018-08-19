@@ -28,7 +28,15 @@ namespace WindowsFormsApp1
         //CONSTRUCTOR
         public App()
         {
-            
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            while ((line = file.ReadLine()) != null )
+            {
+                if (!line.Trim().StartsWith("#"))
+                {
+                String[] info = line.Split(',');
+                }
+            }
         }
 
         //METHODS*******************************************************************************
