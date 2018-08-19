@@ -28,89 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_GroupInfo1 = new WindowsFormsApp1.UC_GroupInfo();
-            this.uC_GroupList2 = new WindowsFormsApp1.UC_GroupList();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.uC_Report1 = new WindowsFormsApp1.UC_Report();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.SuspendLayout();
             // 
-            // panel1
+            // gMapControl1
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.uC_GroupList2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(595, 313);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.uC_GroupInfo1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(595, 313);
-            this.panel2.TabIndex = 1;
-            // 
-            // uC_GroupInfo1
-            // 
-            this.uC_GroupInfo1.Location = new System.Drawing.Point(188, 46);
-            this.uC_GroupInfo1.Name = "uC_GroupInfo1";
-            this.uC_GroupInfo1.Size = new System.Drawing.Size(189, 150);
-            this.uC_GroupInfo1.TabIndex = 0;
-            // 
-            // uC_GroupList2
-            // 
-            this.uC_GroupList2.Location = new System.Drawing.Point(114, 27);
-            this.uC_GroupList2.Name = "uC_GroupList2";
-            this.uC_GroupList2.Size = new System.Drawing.Size(354, 250);
-            this.uC_GroupList2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.uC_Report1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(595, 313);
-            this.panel3.TabIndex = 1;
-            // 
-            // uC_Report1
-            // 
-            this.uC_Report1.Location = new System.Drawing.Point(200, 68);
-            this.uC_Report1.Name = "uC_Report1";
-            this.uC_Report1.Size = new System.Drawing.Size(177, 150);
-            this.uC_Report1.TabIndex = 0;
+            this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gMapControl1.GrayScaleMode = false;
+            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gMapControl1.LevelsKeepInMemmory = 5;
+            this.gMapControl1.Location = new System.Drawing.Point(276, 12);
+            this.gMapControl1.MarkersEnabled = true;
+            this.gMapControl1.MaxZoom = 2;
+            this.gMapControl1.MinZoom = 2;
+            this.gMapControl1.MouseWheelZoomEnabled = true;
+            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gMapControl1.Name = "gMapControl1";
+            this.gMapControl1.NegativeMode = false;
+            this.gMapControl1.PolygonsEnabled = true;
+            this.gMapControl1.RetryLoadTile = 0;
+            this.gMapControl1.RoutesEnabled = true;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gMapControl1.ShowTileGridLines = false;
+            this.gMapControl1.Size = new System.Drawing.Size(420, 411);
+            this.gMapControl1.TabIndex = 0;
+            this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 313);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(708, 435);
+            this.Controls.Add(this.gMapControl1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private UC_GroupInfo uC_GroupInfo1;
-        private UC_GroupList uC_GroupList2;
-        private System.Windows.Forms.Panel panel3;
-        private UC_Report uC_Report1;
+        private GMap.NET.WindowsForms.GMapControl gMapControl1;
     }
 }

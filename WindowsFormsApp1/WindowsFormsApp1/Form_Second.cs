@@ -17,7 +17,8 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void gMapControl1_Load(object sender, EventArgs e)
         {
 
         }
