@@ -78,6 +78,12 @@
     <Compile Include="UC_GroupList.Designer.cs">
       <DependentUpon>UC_GroupList.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Report.Designer.cs">
+      <DependentUpon>UC_Report.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form_Second.resx">
       <DependentUpon>Form_Second.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_GroupList.resx">
       <DependentUpon>UC_GroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Report.resx">
+      <DependentUpon>UC_Report.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
