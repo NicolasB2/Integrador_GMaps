@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
         public string Clasification { get; set; }
         public int OrderClass { get; set; }
         public int Age { get; set; }
-        public Point[] Coord { get; set;  }
+        public double[] Coord { get; set;  }
 
         public InvestigationGroup(String[] datos)
         {
@@ -49,7 +49,7 @@ namespace WindowsFormsApp1
             Coord = generateCoordPoint(Municipality);
     }
 
-        private Point[] generateCoordPoint(String Country)
+        private double[] generateCoordPoint(String Country)
         { 
             return Location.CalculatePoints(Country);
         }
