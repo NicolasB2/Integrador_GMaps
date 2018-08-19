@@ -15,6 +15,11 @@ namespace WindowsFormsApp1
         public UC_Report()
         {
             InitializeComponent();
+
+            comboBox1.Items.Add("Regions");
+            comboBox1.Items.Add("Cities");
+            comboBox1.Items.Add("Investigation Areas");
+            comboBox1.Items.Add("Clasification");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,6 +29,7 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
         }
 
         private void UC_Report_Load(object sender, EventArgs e)
