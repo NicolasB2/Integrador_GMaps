@@ -8,5 +8,31 @@ namespace WindowsFormsApp1
 {
     class App
     {
+        public bool Changed { get; set; }
+        public List<InvestigationGroup> Groups { get; set; }
+
+
+        App()
+        {
+        }
+
+        public void registerGroup(string[] data)
+        {
+        }
+
+        public void updateGroup(string[] data)
+        {
+        }
+
+        public void getGroupInformation(InvestigationGroup ig)
+        {
+        }
+
+        public void getGroupsReport(string data)
+        {
+        }
+
+
     }
+
 }
