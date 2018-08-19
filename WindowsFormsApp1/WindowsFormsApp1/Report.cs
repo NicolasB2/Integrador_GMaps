@@ -21,6 +21,36 @@ namespace WindowsFormsApp1
             this.main = main;
         }
 
+        //METHODS*******************************************************************************
+
+        //The following methods generate an IEnumerable with the elements needed to apply the second filter
+        public IEnumerable<InvestigationGroup> getCitiesFilter(String cities)
+        {
+            return from n in main.GroupList
+                   
+                   select n;
+        }
+        public IEnumerable<InvestigationGroup> getRegionsFilter(String region)
+        {
+            return from n in main.GroupList
+                   
+                   select n;
+        }
+        public IEnumerable<InvestigationGroup> getInvestigationAreasFilter(String area)
+        {
+            return from n in main.GroupList
+                   
+                   select n;
+        }
+        public IEnumerable<InvestigationGroup> getClasificationFilter(String clasification)
+        {
+            return from n in main.GroupList
+                   
+                   select n;
+        }
+
+
+        //The following methods generate an IEnumerable with all the InvestigationGroup that fulfilled the two filters
         public IEnumerable<InvestigationGroup> getCitiesReport(String cities)
         {
             return  from n in main.GroupList
