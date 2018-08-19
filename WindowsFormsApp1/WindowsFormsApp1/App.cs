@@ -25,6 +25,11 @@ namespace WindowsFormsApp1
         //This tells me if any of the groups on the list has been updated. 
         public bool ListUpdated { set; get; }
 
+        //CONSTRUCTOR
+        public App()
+        {
+            
+        }
 
         //METHODS*******************************************************************************
 

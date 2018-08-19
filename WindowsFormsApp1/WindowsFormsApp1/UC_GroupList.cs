@@ -18,20 +18,26 @@ namespace WindowsFormsApp1
             app = new App();
             InitializeComponent();
 
-            app.GroupList.ForEach(listBox1.Items.Add(Name));
-
-            
-
-
-            string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\source\repos\ConsoleApp2\WindowsFormsApp3\Listados\listado.txt");
-            while ((line = file.ReadLine()) != null)
+            for(int i = 0; i < app.GroupList.Count(); i++)
             {
-                listBox1.Items.Add(line);
-
+                listBox1.Items.Add(app.GroupList.ElementAt(i).Name);
             }
+        }
 
 
+        public string getSelectedItem()
+        {
+            string igName = "";
+
+            try
+            {
+                igName = listBox1.SelectedItem.ToString();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("You must select an Investigation Group to continue the process.");
+            }
+            return igName;
         }
 
         private void Investigation_groups_Click(object sender, EventArgs e)
