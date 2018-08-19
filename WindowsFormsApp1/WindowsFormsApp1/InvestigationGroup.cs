@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
         public int Age { get; set; }
         public Point[] Coord { get; set;  }
 
-        InvestigationGroup(String[] datos)
+        public InvestigationGroup(String[] datos)
         {
             generateCoordPoint(datos[0]);
         }
