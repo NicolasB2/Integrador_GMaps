@@ -9,6 +9,7 @@ namespace WindowsFormsApp1
 {
     class InvestigationGroup
     {
+
         public string Announcement { get; set; }
         public int Year { get; set; }
         public string Code { get; set; }
