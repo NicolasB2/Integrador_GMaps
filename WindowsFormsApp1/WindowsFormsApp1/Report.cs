@@ -6,6 +6,45 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
+    class Compared_Region : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.Region.Equals(y.Region);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.GetHashCode();
+        }
+    }
+
+    class Compared_Area : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.OcdeArea.Equals(y.OcdeArea);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.GetHashCode();
+        }
+    }
+
+    class Compared_Clasification : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.Clasification.Equals(y.Clasification);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.GetHashCode();
+        }
+    }
+
     class Report
     {
 
@@ -26,27 +65,19 @@ namespace WindowsFormsApp1
         //The following methods generate an IEnumerable with the elements needed to apply the second filter
         public IEnumerable<InvestigationGroup> getCitiesFilter(String cities)
         {
-            return from n in main.GroupList
-                   
-                   select n;
+            return main.GroupList.Distinct();
         }
         public IEnumerable<InvestigationGroup> getRegionsFilter(String region)
         {
-            return from n in main.GroupList
-                   
-                   select n;
+            return main.GroupList.Distinct(new Compared_Region());
         }
         public IEnumerable<InvestigationGroup> getInvestigationAreasFilter(String area)
         {
-            return from n in main.GroupList
-                   
-                   select n;
+            return main.GroupList.Distinct(new Compared_Area());
         }
         public IEnumerable<InvestigationGroup> getClasificationFilter(String clasification)
         {
-            return from n in main.GroupList
-                   
-                   select n;
+            return main.GroupList.Distinct(new Compared_Clasification());
         }
 
 
