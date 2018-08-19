@@ -10,7 +10,7 @@ namespace WindowsFormsApp1
     class InvestigationGroup
     {
         public string Announcement { get; set; }
-        public int Year { get; set; }
+        public string Year { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
         public string CreationDate { get; set; }
@@ -30,7 +30,24 @@ namespace WindowsFormsApp1
 
         public InvestigationGroup(String[] info)
         {
-            generateCoordPoint(datos[0]);
+            Announcement = info[0];
+            Year = info[1];
+            Code = info[2];
+            Name = info[3];
+            CreationDate = info[4];
+            Municipality = info[5];
+            Department = info[6];
+            Country = info[7];
+            Region = info[8];
+            DaneID = info[9];
+            OcdeID = info[10];
+            OcdeArea = info[11];
+            OcdeLargeArea = info[12];
+            Clasification = info[13];
+            OrderClass = int.Parse(info[14]);
+            Age = int.Parse(info[15]);
+
+            generateCoordPoint("");
         }
 
         private Point[] generateCoordPoint(String Country)

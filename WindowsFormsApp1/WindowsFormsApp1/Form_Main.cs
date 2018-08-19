@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Form_Main : Form
     {
+        private App app;
         public Form_Main()
         {
             InitializeComponent();
+            app = new App();
 
         }
 
