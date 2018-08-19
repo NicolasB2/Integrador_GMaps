@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
         public string Announcement { get; set; }
         public int Year { get; set; }
         public string Code { get; set; }
-        public string GroupNumber { get; set; }
+        public string Name { get; set; }
         public string CreationDate { get; set; }
         public string Municipality { get; set; }
         public string Department { get; set; }
