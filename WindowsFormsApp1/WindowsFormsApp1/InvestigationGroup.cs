@@ -30,12 +30,28 @@ namespace WindowsFormsApp1
 
         public InvestigationGroup(String[] datos)
         {
-            generateCoordPoint(datos[0]);
-        }
+            Announcement = datos[0];
+            Year = int.Parse(datos[1]);
+            Code = datos[2]; 
+            Name = datos[3];
+            CreationDate = datos[4];
+            Municipality = datos[5];
+            Department = datos[6];
+            Country = datos[7];
+            Region = datos[8];
+            DaneID = datos[9];
+            OcdeID = datos[10];
+            OcdeArea = datos[11];
+            OcdeLargeArea = datos[12];
+            Clasification = datos[13];
+            OrderClass = int.Parse( datos[14]);
+            Age = int.Parse( datos[15]);
+            Coord = generateCoordPoint(Municipality);
+    }
 
-        private void generateCoordPoint(String Country)
-        {
-            Coord = Location.CalculatePoints(Country);
+        private Point[] generateCoordPoint(String Country)
+        { 
+            return Location.CalculatePoints(Country);
         }
     }
 }
