@@ -25,6 +25,11 @@ namespace WindowsFormsApp1
         //This tells me if any of the groups on the list has been updated. 
         public bool ListUpdated { set; get; }
 
+        //CONSTRUCTOR
+        public App()
+        {
+            
+        }
 
         //METHODS*******************************************************************************
 
@@ -42,11 +47,11 @@ namespace WindowsFormsApp1
 
         }
 
-        //this method find and retorn the InvestigationGroup with the name of the parameter
-        public InvestigationGroup GetGroupInfo(String nombre)
+        //This method find and return the InvestigationGroup with the name of the parameter
+        public InvestigationGroup GetGroupInfo(String name)
         {
               IEnumerable <InvestigationGroup> x =  from n in GroupList
-                                                    where n.GroupNumber.Equals(nombre)
+                                                    where n.Name.Equals(name)
                                                     select n;
 
             return x.ElementAt(0);
