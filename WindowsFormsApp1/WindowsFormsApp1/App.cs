@@ -36,17 +36,17 @@ namespace WindowsFormsApp1
             ListUpdated = true;
         }
 
-        //
+        //this method Update the data of the InvestigationGroup with the name entered by parameter
         public void UpdateGroup(String selectedGroup, string[] groupAttributes)
         {
 
         }
 
         //this method find and retorn the InvestigationGroup with the name of the parameter
-        public InvestigationGroup GetGroupInfo(String nombre)
+        public InvestigationGroup GetGroup(String name)
         {
               IEnumerable <InvestigationGroup> x =  from n in GroupList
-                                                    where n.GroupNumber.Equals(nombre)
+                                                    where n.Name.Equals(name)
                                                     select n;
 
             return x.ElementAt(0);
