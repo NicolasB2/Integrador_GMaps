@@ -6,6 +6,45 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
+    class Compared_Region : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.Region.Equals(y.Region);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.GetHashCode();
+        }
+    }
+
+    class Compared_Area : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.OcdeArea.Equals(y.OcdeArea);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.GetHashCode();
+        }
+    }
+
+    class Compared_Clasification : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.Clasification.Equals(y.Clasification);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.GetHashCode();
+        }
+    }
+
     class Report
     {
 
@@ -14,26 +53,58 @@ namespace WindowsFormsApp1
         public static string REPORT_IAREAS = "REPORT_IAREAS";
         public static string REPORT_CLASIFICATION = "REPORT_CLASIFICATION";
 
-        Report()
-        {
+        private App main;
 
+        Report(App main )
+        {
+            this.main = main;
         }
 
-        public object getCitiesReport(object data)
+        //METHODS*******************************************************************************
+
+        //The following methods generate an IEnumerable with the elements needed to apply the second filter
+        public IEnumerable<InvestigationGroup> getCitiesFilter(String cities)
         {
-            return null;
+            return main.GroupList.Distinct();
         }
-        public object getRegionsReport(object data)
+        public IEnumerable<InvestigationGroup> getRegionsFilter(String region)
         {
-            return null;
+            return main.GroupList.Distinct(new Compared_Region());
         }
-        public object getInvestigationAreasReport(object data) 
+        public IEnumerable<InvestigationGroup> getInvestigationAreasFilter(String area)
         {
-            return null;
+            return main.GroupList.Distinct(new Compared_Area());
         }
-        public object getClasificationReport(object data)
+        public IEnumerable<InvestigationGroup> getClasificationFilter(String clasification)
         {
-            return null;
+            return main.GroupList.Distinct(new Compared_Clasification());
+        }
+
+
+        //The following methods generate an IEnumerable with all the InvestigationGroup that fulfilled the two filters
+        public IEnumerable<InvestigationGroup> getCitiesReport(String cities)
+        {
+            return  from n in main.GroupList
+                    where n.Country.Equals(cities)
+                    select n;
+        }
+        public IEnumerable<InvestigationGroup> getRegionsReport(String region)
+        {
+            return from n in main.GroupList
+                   where n.Region.Equals(region)
+                   select n;
+        }
+        public IEnumerable<InvestigationGroup> getInvestigationAreasReport(String area) 
+        {
+            return from n in main.GroupList
+                   where n.OcdeArea.Equals(area)
+                   select n;
+        }
+        public IEnumerable<InvestigationGroup> getClasificationReport(String clasification)
+        {
+            return from n in main.GroupList
+                   where n.Clasification.Equals(clasification)
+                   select n;
         } 
     }
 }
