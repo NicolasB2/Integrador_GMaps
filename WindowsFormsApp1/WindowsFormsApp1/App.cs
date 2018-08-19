@@ -29,7 +29,11 @@ namespace WindowsFormsApp1
         //CONSTRUCTOR
         public App()
         {
-            
+            GroupList = new List<InvestigationGroup>();
+        }
+
+        public void inicilizarDataBase()
+        {
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
             int c = 0; 
@@ -37,19 +41,15 @@ namespace WindowsFormsApp1
             {
                 c++;
                 String[] info = line.Split(';');
-                //MessageBox.Show("fila: " +c+ "  " + info[14] + "   " + info[15]);
 
                 try
                 {
-                    int b = int.Parse(info[14]);
-                    int a = int.Parse(info[15]);
-                //InvestigationGroup ig = new InvestigationGroup(info);
-                //GroupList.Add(ig);
+                InvestigationGroup ig = new InvestigationGroup(info);
+                GroupList.Add(ig);
 
                 }catch(Exception e){
-                    MessageBox.Show("fila: " + c );
+                 //   MessageBox.Show("Error en la fila: " + c );
                 }
-                line = null;
 
             }
         }

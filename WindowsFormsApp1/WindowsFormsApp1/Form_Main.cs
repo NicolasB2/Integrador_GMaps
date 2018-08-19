@@ -12,11 +12,9 @@ namespace WindowsFormsApp1
 {
     public partial class Form_Main : Form
     {
-        private App app;
         public Form_Main()
         {
             InitializeComponent();
-            app = new App();
 
         }
 
@@ -65,6 +63,11 @@ namespace WindowsFormsApp1
 
             markers.Markers.Add(marker);
             gMapControl1.Overlays.Add(markers);
+        }
+
+        private void uC_GroupList1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

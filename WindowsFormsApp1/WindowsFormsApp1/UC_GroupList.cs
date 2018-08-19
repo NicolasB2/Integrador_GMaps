@@ -15,8 +15,9 @@ namespace WindowsFormsApp1
         private static App app;
         public UC_GroupList()
         {
-            app = new App();
             InitializeComponent();
+            app = new App();
+            app.inicilizarDataBase();
 
             for(int i = 0; i < app.GroupList.Count(); i++)
             {
@@ -46,6 +47,11 @@ namespace WindowsFormsApp1
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_GroupList_Load(object sender, EventArgs e)
         {
 
         }

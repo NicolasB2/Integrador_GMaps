@@ -71,6 +71,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_GroupList";
             this.Size = new System.Drawing.Size(350, 400);
+            this.Load += new System.EventHandler(this.UC_GroupList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
