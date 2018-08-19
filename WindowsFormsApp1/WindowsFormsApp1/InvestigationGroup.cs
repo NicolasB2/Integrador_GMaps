@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
         public string announcement { get; set; }
         public int year { get; set; }
         public string code { get; set; }
-        public string groupNumber { get; set; }
+        public string name { get; set; }
         public string creationDate { get; set; }
         public string municipality { get; set; }
         public string department { get; set; }
@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         public string ocdeID { get; set; }
         public string ocdeArea { get; set; }
         public string ocdeLargeArea { get; set; }
-        public string clasification { get; set; }
+        public string classification { get; set; }
         public int orderClass { get; set; }
         public int age { get; set; }
 
