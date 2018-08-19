@@ -9,23 +9,33 @@ namespace WindowsFormsApp1
 {
     class InvestigationGroup
     {
-        public string announcement { get; set; }
-        public int year { get; set; }
-        public string code { get; set; }
-        public string name { get; set; }
-        public string creationDate { get; set; }
-        public string municipality { get; set; }
-        public string department { get; set; }
-        public string country { get; set; }
-        public string region { get; set; }
-        public string daneID { get; set; }
-        public string ocdeID { get; set; }
-        public string ocdeArea { get; set; }
-        public string ocdeLargeArea { get; set; }
-        public string classification { get; set; }
-        public int orderClass { get; set; }
-        public int age { get; set; }
 
-        public Point coord { get; set;  }
+        public string Announcement { get; set; }
+        public int Year { get; set; }
+        public string Code { get; set; }
+        public string GroupNumber { get; set; }
+        public string CreationDate { get; set; }
+        public string Municipality { get; set; }
+        public string Department { get; set; }
+        public string Country { get; set; }
+        public string Region { get; set; }
+        public string DaneID { get; set; }
+        public string OcdeID { get; set; }
+        public string OcdeArea { get; set; }
+        public string OcdeLargeArea { get; set; }
+        public string Clasification { get; set; }
+        public int OrderClass { get; set; }
+        public int Age { get; set; }
+        public Point[] Coord { get; set;  }
+
+        InvestigationGroup(String[] datos)
+        {
+            generateCoordPoint(datos[0]);
+        }
+
+        private void generateCoordPoint(String Country)
+        {
+            Coord = Location.CalculatePoints(Country);
+        }
     }
 }
