@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 using System.Collections;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -28,14 +29,28 @@ namespace WindowsFormsApp1
         //CONSTRUCTOR
         public App()
         {
+            GroupList = new List<InvestigationGroup>();
+        }
+
+        public void inicilizarDataBase()
+        {
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            int c = 0; 
             while ((line = file.ReadLine()) != null )
             {
-                if (!line.Trim().StartsWith("#"))
+                c++;
+                String[] info = line.Split(';');
+
+                try
                 {
-                String[] info = line.Split(',');
+                InvestigationGroup ig = new InvestigationGroup(info);
+                GroupList.Add(ig);
+
+                }catch(Exception e){
+                 //   MessageBox.Show("Error en la fila: " + c );
                 }
+
             }
         }
 
