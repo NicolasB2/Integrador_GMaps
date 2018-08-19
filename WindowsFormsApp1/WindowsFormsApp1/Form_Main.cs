@@ -46,5 +46,22 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+            gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+            gMapControl1.SetPositionByKeywords("Cali, Colombia");
+            gMapControl1.ShowCenter = false;
+
+            GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
+            GMap.NET.WindowsForms.GMapMarker marker =
+                new GMap.NET.WindowsForms.Markers.GMarkerGoogle(
+                    new GMap.NET.PointLatLng(48.8617774, 2.349272),
+                    GMap.NET.WindowsForms.Markers.GMarkerGoogleType.red_pushpin);
+
+            markers.Markers.Add(marker);
+            gMapControl1.Overlays.Add(markers);
+        }
     }
 }
