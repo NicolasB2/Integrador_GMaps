@@ -28,24 +28,29 @@ namespace WindowsFormsApp1
 
         }
 
+
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Form1 fSecond = new Form1(Form1.REPORT);
+            fSecond.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form1 fSecond = new Form1(Form1.GROUP_LIST);
+            fSecond.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Form1 fSecond = new Form1(Form1.GROUP_LIST);
+            fSecond.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Form1 fSecond = new Form1(Form1.GROUP_INFO);
+            fSecond.Show();
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)

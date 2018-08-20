@@ -12,9 +12,33 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        public Form1()
+
+        public static String GROUP_INFO = "GROUP_INFO";
+        public static String REPORT = "REPORT";
+        public static String GROUP_LIST = "GROUP_LIST";
+
+        public Form1(String type)
         {
             InitializeComponent();
+            Choose_Panel(type);
+        }
+
+        private void Choose_Panel(String type)
+        {
+
+            if (type.Equals(GROUP_INFO))
+            {
+                panel1.Show();
+            }
+            else if (type.Equals(REPORT))
+            {
+                panel2.Show();
+            }
+            else if (type.Equals(GROUP_LIST))
+            {
+                panel3.Show();
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

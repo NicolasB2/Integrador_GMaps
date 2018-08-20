@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
-            this.button1 = new System.Windows.Forms.Button();
+            this.Generate_Report = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.SuspendLayout();
             // 
-            // button1
+            // Generate_Report
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(36, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Generate Report";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.Generate_Report.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Generate_Report.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Generate_Report.Location = new System.Drawing.Point(36, 70);
+            this.Generate_Report.Name = "Generate_Report";
+            this.Generate_Report.Size = new System.Drawing.Size(169, 56);
+            this.Generate_Report.TabIndex = 0;
+            this.Generate_Report.Text = "Generate Report";
+            this.Generate_Report.UseVisualStyleBackColor = false;
+            this.Generate_Report.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -121,7 +121,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Generate_Report);
             this.Name = "Form_Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -131,7 +131,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Generate_Report;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
