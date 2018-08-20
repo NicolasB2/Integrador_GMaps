@@ -17,9 +17,9 @@ namespace WindowsFormsApp1
         public static String REPORT = "REPORT";
         public static String GROUP_LIST = "GROUP_LIST";
 
-        public Form1()
+        public Form1(App program)
         {
-            InitializeComponent();
+            InitializeComponent(program);
         }
 
         public void Choose_Panel(String type)

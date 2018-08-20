@@ -31,14 +31,14 @@ namespace WindowsFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1();
+            Form1 fSecond = new Form1(this.program);
             fSecond.Choose_Panel(Form1.REPORT);
             fSecond.Show(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1();
+            Form1 fSecond = new Form1(this.program);
             //fSecond.uC_GroupInfo1.type_TextBox(UC_GroupInfo.VISUALIZAR_INFO);
             fSecond.Choose_Panel(Form1.GROUP_LIST);
             fSecond.Show();
@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1();
+            Form1 fSecond = new Form1(this.program);
             //fSecond.uC_GroupInfo1.type_TextBox(UC_GroupInfo.ACTUALIZAR);
             fSecond.Choose_Panel(Form1.GROUP_LIST);
             fSecond.Show();
@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1();
+            Form1 fSecond = new Form1(this.program);
             //fSecond.uC_GroupInfo1.type_TextBox(UC_GroupInfo.REGISTRAR);
             fSecond.Choose_Panel(Form1.GROUP_INFO);
             fSecond.Show();

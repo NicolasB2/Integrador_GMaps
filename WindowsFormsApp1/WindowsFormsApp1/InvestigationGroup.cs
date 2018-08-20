@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    class InvestigationGroup
+    public class InvestigationGroup
     {
         public string Announcement { get; set; }
         public string Year { get; set; }

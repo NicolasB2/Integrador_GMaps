@@ -26,12 +26,12 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(App program)
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.uC_Report1 = new WindowsFormsApp1.UC_Report();
-            this.uC_GroupList1 = new WindowsFormsApp1.UC_GroupList();
-            this.uC_GroupInfo1 = new WindowsFormsApp1.UC_GroupInfo();
+            this.uC_Report1 = new WindowsFormsApp1.UC_Report(program);
+            this.uC_GroupList1 = new WindowsFormsApp1.UC_GroupList(program);
+            this.uC_GroupInfo1 = new WindowsFormsApp1.UC_GroupInfo(program);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 

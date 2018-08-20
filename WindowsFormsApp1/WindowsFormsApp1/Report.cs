@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
         }
     }
 
-    class Report
+    public class Report
     {
 
         public static string REPORT_REGIONS = "REPORT_REGIONS";
@@ -63,15 +63,15 @@ namespace WindowsFormsApp1
         //METHODS*******************************************************************************
 
         //The following methods generate an IEnumerable with the elements needed to apply the second filter
-        public IEnumerable<InvestigationGroup> getCitiesFilter(String cities)
+        public IEnumerable<InvestigationGroup> getCitiesFilter()
         {
             return main.GroupList.Distinct();
         }
-        public IEnumerable<InvestigationGroup> getRegionsFilter(String region)
+        public IEnumerable<InvestigationGroup> getRegionsFilter()
         {
             return main.GroupList.Distinct(new Compared_Region());
         }
-        public IEnumerable<InvestigationGroup> getInvestigationAreasFilter(String area)
+        public IEnumerable<InvestigationGroup> getInvestigationAreasFilter()
         {
             return main.GroupList.Distinct(new Compared_Area());
         }

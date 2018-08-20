@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
     {
 
         private static App app;
-        public UC_GroupList()
+        public UC_GroupList(App program)
         {
             InitializeComponent();
             app = new App();

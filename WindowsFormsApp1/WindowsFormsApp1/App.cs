@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
 
-    class App
+    public class App
     {
         //ATTRIBUTES & CONSTANTS ****************************************************************
 
