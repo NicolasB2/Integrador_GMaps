@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            second.Send_data_UC_Info(listBox1.GetSelected());
+            second.Send_data_UC_Info(app.GetGroup(listBox1.SelectedItem.ToString()));
             button2.Enabled = true;
         }
 
