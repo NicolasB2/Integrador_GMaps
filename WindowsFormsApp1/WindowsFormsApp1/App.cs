@@ -52,8 +52,7 @@ namespace WindowsFormsApp1
                 InvestigationGroup ig = new InvestigationGroup(info);
                     GroupList.Add(ig);
 
-                }
-                catch(Exception e){
+                }catch(Exception e){
                  //   MessageBox.Show("Error en la fila: " + c );
                 }
 
