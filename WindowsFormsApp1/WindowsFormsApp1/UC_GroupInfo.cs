@@ -89,21 +89,20 @@ namespace WindowsFormsApp1
                 String[] data = new String[16];
                 data[0] = this.Announcement.Text;
                 data[1] = this.Year.Text;
-                data[2] = this.name.Text;
-                data[3] = this.Code.Text;
-                data[4] = this.Country.Text;
-                data[5] = this.Department.Text;
-                data[6] = this.Municipality.Text;
-                data[7] = this.CrreationDate.Text;
-                data[8] = this.Age.Text;
-                data[9] = this.OrderClass.Text;
-                data[10] = this.Clasification.Text;
-                data[11] = this.Ocde_Large.Text;
-                data[12] = this.Ocde_area.Text;
-                data[13] = this.Ocde_Id.Text;
-                data[14] = this.Dane_Id.Text;
-                data[15] = this.region.Text;
-
+                data[3] = this.name.Text;
+                data[2] = this.Code.Text;
+                data[7] = this.Country.Text;
+                data[6] = this.Department.Text;
+                data[5] = this.Municipality.Text;
+                data[4] = this.CrreationDate.Text;
+                data[15] = this.Age.Text;
+                data[14] = this.OrderClass.Text;
+                data[13] = this.Clasification.Text;
+                data[12] = this.Ocde_Large.Text;
+                data[11] = this.Ocde_area.Text;
+                data[10] = this.Ocde_Id.Text;
+                data[9] = this.Dane_Id.Text;
+                data[8] = this.region.Text;
 
                 Second.UpDate_InvestigationGroup(data);
             }

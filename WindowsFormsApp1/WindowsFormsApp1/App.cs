@@ -79,7 +79,6 @@ namespace WindowsFormsApp1
         public void DeleteDataBase()
         {
             System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
-            gvuuv
         }
 
         //this method find and retorn the InvestigationGroup with the name of the parameter

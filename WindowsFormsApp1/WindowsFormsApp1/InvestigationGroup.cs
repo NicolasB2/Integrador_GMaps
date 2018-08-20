@@ -31,6 +31,9 @@ namespace WindowsFormsApp1
         public int Age { get; set; }
         public double[] Coord { get; set;  }
 
+        //*****************
+        //deberia tener un try catch
+        //*******************
         public InvestigationGroup(String[] info)
         {
             points = new Location();
