@@ -26,6 +26,9 @@ namespace WindowsFormsApp1
             }
         }
 
+        public UC_GroupList()
+        {
+        }
 
         public string getSelectedItem()
         {

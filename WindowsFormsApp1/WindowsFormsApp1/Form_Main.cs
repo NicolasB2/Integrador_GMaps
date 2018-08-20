@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         public Form_Main()
         {
             InitializeComponent();
-            form2 = new Form1(); 
+            //form2 = new Form1();
 
         }
 

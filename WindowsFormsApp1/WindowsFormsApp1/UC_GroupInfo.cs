@@ -21,6 +21,10 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        public UC_GroupInfo()
+        {
+        }
+
         public void type_TextBox(string type)
         {
             bool x = false;

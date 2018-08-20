@@ -22,6 +22,10 @@ namespace WindowsFormsApp1
             comboBox1.Items.Add("Clasification");
         }
 
+        public UC_Report()
+        {
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
