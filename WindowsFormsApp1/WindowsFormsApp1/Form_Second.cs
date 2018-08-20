@@ -16,9 +16,11 @@ namespace WindowsFormsApp1
         public static String GROUP_INFO = "GROUP_INFO";
         public static String REPORT = "REPORT";
         public static String GROUP_LIST = "GROUP_LIST";
+        public App program;
 
         public Form1(App program)
-        {   
+        {
+            this.program = program;
             InitializeComponent(program);
         }
 
@@ -52,14 +54,24 @@ namespace WindowsFormsApp1
             uC_GroupInfo1.Data_Group(group);
         }
 
+        internal void Delete_Group(InvestigationGroup group)
+        {
+            program.DeleteInvestigationGroup(group);
+        }
+
         public void Edit_Info(bool type)
         {
-            uC_GroupInfo1.type_TextBox(type);
+            uC_GroupInfo1.Type_TextBox(type);
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        internal void UpDate_InvestigationGroup(String[] group)
+        {
+            this.program.RegisterGroup(group);
         }
     }
 }

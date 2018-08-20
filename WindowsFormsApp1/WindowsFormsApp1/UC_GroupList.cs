@@ -21,7 +21,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
             app = new App();
             second = interfaz;
-            bool type = true;
             app.inicilizarDataBase();
             
 
@@ -45,6 +44,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception e)
             {
+                e.ToString();
                 MessageBox.Show("You must select an Investigation Group to continue the process.");
             }
             return igName;
