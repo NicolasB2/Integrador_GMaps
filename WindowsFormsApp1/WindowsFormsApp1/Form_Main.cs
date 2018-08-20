@@ -12,16 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class Form_Main : Form
     {
+        private App program;
         public Form_Main()
         {
+            this.program = new App();
             InitializeComponent();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -33,7 +31,7 @@ namespace WindowsFormsApp1
         {
             Form1 fSecond = new Form1(this.program);
             fSecond.Choose_Panel(Form1.REPORT);
-            fSecond.Show(); 
+            fSecond.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

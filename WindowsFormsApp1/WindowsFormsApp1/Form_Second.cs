@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         public static String GROUP_LIST = "GROUP_LIST";
 
         public Form1(App program)
-        {
+        {   
             InitializeComponent(program);
         }
 

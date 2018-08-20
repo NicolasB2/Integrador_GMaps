@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
             OrderClass = int.Parse(info[14]);
             Age = int.Parse(info[15]);
 
-            generateCoordPoint("");
+            //generateCoordPoint("");
         }
 
         private double[] generateCoordPoint(String Country)

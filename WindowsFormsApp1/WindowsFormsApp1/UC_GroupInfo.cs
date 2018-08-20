@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         public static String ACTUALIZAR = "ACTUALIZAR";
         public static String REGISTRAR = "REGISTRAR";
 
-        public UC_GroupInfo(App program)
+        public UC_GroupInfo()
         {
             InitializeComponent();
         }

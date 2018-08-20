@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class UC_Report : UserControl
     {
-        public UC_Report(App program)
+        public UC_Report()
         {
             InitializeComponent();
 

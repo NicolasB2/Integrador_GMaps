@@ -14,13 +14,13 @@ namespace WindowsFormsApp1
     {
 
         private static App app;
-        public UC_GroupList(App program)
+        public UC_GroupList()
         {
             InitializeComponent();
             app = new App();
             app.inicilizarDataBase();
 
-            for(int i = 0; i < app.GroupList.Count(); i++)
+            for (int i = 0; i < app.GroupList.Count(); i++)
             {
                 listBox1.Items.Add(app.GroupList.ElementAt(i).Name);
             }
