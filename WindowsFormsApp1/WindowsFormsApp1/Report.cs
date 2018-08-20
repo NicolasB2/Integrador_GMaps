@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -15,7 +16,7 @@ namespace WindowsFormsApp1
 
         public int GetHashCode(InvestigationGroup obj)
         {
-            return obj.GetHashCode();
+            return obj.Region.GetHashCode();
         }
     }
 
@@ -28,7 +29,7 @@ namespace WindowsFormsApp1
 
         public int GetHashCode(InvestigationGroup obj)
         {
-            return obj.GetHashCode();
+            return obj.OcdeArea.GetHashCode();
         }
     }
 
@@ -41,21 +42,16 @@ namespace WindowsFormsApp1
 
         public int GetHashCode(InvestigationGroup obj)
         {
-            return obj.GetHashCode();
+            return obj.Clasification.GetHashCode();
         }
     }
 
     public class Report
     {
 
-        public static string REPORT_REGIONS = "REPORT_REGIONS";
-        public static string REPORT_CITIES = "REPORT_CITIES";
-        public static string REPORT_IAREAS = "REPORT_IAREAS";
-        public static string REPORT_CLASIFICATION = "REPORT_CLASIFICATION";
-
         private App main;
 
-        Report(App main )
+        public Report(App main )
         {
             this.main = main;
         }
@@ -75,7 +71,7 @@ namespace WindowsFormsApp1
         {
             return main.GroupList.Distinct(new Compared_Area());
         }
-        public IEnumerable<InvestigationGroup> getClasificationFilter(String clasification)
+        public IEnumerable<InvestigationGroup> getClasificationFilter()
         {
             return main.GroupList.Distinct(new Compared_Clasification());
         }

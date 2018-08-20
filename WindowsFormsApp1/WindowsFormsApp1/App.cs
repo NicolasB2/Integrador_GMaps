@@ -30,12 +30,17 @@ namespace WindowsFormsApp1
         public App()
         {
             GroupList = new List<InvestigationGroup>();
+            Report = new Report(this);
+            inicilizarDataBase();
         }
 
         public void inicilizarDataBase()
         {
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+
+            //C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt
+
             int c = 0; 
             while ((line = file.ReadLine()) != null )
             {
@@ -45,9 +50,10 @@ namespace WindowsFormsApp1
                 try
                 {
                 InvestigationGroup ig = new InvestigationGroup(info);
-                GroupList.Add(ig);
+                    GroupList.Add(ig);
 
-                }catch(Exception){
+                }
+                catch(Exception e){
                  //   MessageBox.Show("Error en la fila: " + c );
                 }
 

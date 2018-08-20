@@ -17,17 +17,8 @@ namespace WindowsFormsApp1
         public static String REPORT = "REPORT";
         public static String GROUP_LIST = "GROUP_LIST";
 
-        private UC_GroupInfo uC_GroupInfo1;
-        private UC_Report uC_Report1;
-        private UC_GroupList uC_GroupList1;
-
         public Form1(App program)
-        {
-            uC_GroupInfo1 = new UC_GroupInfo();
-            uC_Report1 = new UC_Report();
-            uC_GroupList1 = new UC_GroupList();
-
-
+        {   
             InitializeComponent(program);
         }
 
@@ -45,6 +36,7 @@ namespace WindowsFormsApp1
                 this.uC_Report1.Show();
                 this.uC_GroupList1.Hide();
                 this.uC_GroupInfo1.Hide();
+
             }
             else if (type.Equals(GROUP_LIST))
             {
@@ -55,12 +47,11 @@ namespace WindowsFormsApp1
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Edit_Info(bool type)
         {
-
+            uC_GroupInfo1.type_TextBox(type);
         }
-
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

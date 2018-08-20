@@ -35,10 +35,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.SuspendLayout();
-            //
-            //APP
-            //
-            this.program = new App();
+            
 
             // 
             // Generate_Report
@@ -135,8 +132,6 @@
         }
 
         #endregion
-
-        private App program;
         private System.Windows.Forms.Button Generate_Report;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
