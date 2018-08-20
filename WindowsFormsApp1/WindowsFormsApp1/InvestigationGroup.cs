@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 namespace WindowsFormsApp1
 {
 
-    
-
     public class InvestigationGroup
     {
 
@@ -56,10 +54,18 @@ namespace WindowsFormsApp1
             generateCoordPoint(Country);
         }
 
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
+
         private double[] generateCoordPoint(String Country)
         {
 
             return null;
         }
+
+
     }
 }

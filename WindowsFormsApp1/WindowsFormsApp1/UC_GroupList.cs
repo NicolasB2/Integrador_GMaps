@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
             for (int i = 0; i < app.GroupList.Count(); i++)
             {
-                listBox1.Items.Add(app.GroupList.ElementAt(i).Name);
+                listBox1.Items.Add(app.GroupList.ElementAt(i));
             }
         }
 
@@ -57,6 +57,7 @@ namespace WindowsFormsApp1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            second.Send_data_UC_Info(app.GetGroup(listBox1.SelectedItem.ToString()));
             button2.Enabled = true;
         }
 

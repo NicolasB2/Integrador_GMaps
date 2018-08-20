@@ -44,22 +44,22 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.Announcement = new System.Windows.Forms.TextBox();
+            this.Year = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
+            this.Code = new System.Windows.Forms.TextBox();
+            this.Country = new System.Windows.Forms.TextBox();
+            this.Department = new System.Windows.Forms.TextBox();
+            this.Municipality = new System.Windows.Forms.TextBox();
+            this.CrreationDate = new System.Windows.Forms.TextBox();
+            this.Age = new System.Windows.Forms.TextBox();
+            this.OrderClass = new System.Windows.Forms.TextBox();
+            this.Clasification = new System.Windows.Forms.TextBox();
+            this.Ocde_Large = new System.Windows.Forms.TextBox();
+            this.Ocde_area = new System.Windows.Forms.TextBox();
+            this.Ocde_Id = new System.Windows.Forms.TextBox();
+            this.Dane_Id = new System.Windows.Forms.TextBox();
+            this.Region = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -223,134 +223,134 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "Country";
             // 
-            // textBox1
+            // Announcement
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(119, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 21);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Announcement.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Announcement.Location = new System.Drawing.Point(119, 38);
+            this.Announcement.Name = "Announcement";
+            this.Announcement.Size = new System.Drawing.Size(172, 21);
+            this.Announcement.TabIndex = 16;
+            this.Announcement.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // Year
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(119, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 21);
-            this.textBox2.TabIndex = 17;
+            this.Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Year.Location = new System.Drawing.Point(119, 79);
+            this.Year.Name = "Year";
+            this.Year.Size = new System.Drawing.Size(172, 21);
+            this.Year.TabIndex = 17;
             // 
-            // textBox3
+            // name
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(119, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 21);
-            this.textBox3.TabIndex = 19;
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(119, 165);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(172, 21);
+            this.name.TabIndex = 19;
             // 
-            // textBox4
+            // Code
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(119, 124);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 21);
-            this.textBox4.TabIndex = 18;
+            this.Code.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Code.Location = new System.Drawing.Point(119, 124);
+            this.Code.Name = "Code";
+            this.Code.Size = new System.Drawing.Size(172, 21);
+            this.Code.TabIndex = 18;
             // 
-            // textBox5
+            // Country
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(119, 333);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(172, 21);
-            this.textBox5.TabIndex = 23;
+            this.Country.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Country.Location = new System.Drawing.Point(119, 333);
+            this.Country.Name = "Country";
+            this.Country.Size = new System.Drawing.Size(172, 21);
+            this.Country.TabIndex = 23;
             // 
-            // textBox6
+            // Department
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(119, 292);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(172, 21);
-            this.textBox6.TabIndex = 22;
+            this.Department.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Department.Location = new System.Drawing.Point(119, 292);
+            this.Department.Name = "Department";
+            this.Department.Size = new System.Drawing.Size(172, 21);
+            this.Department.TabIndex = 22;
             // 
-            // textBox7
+            // Municipality
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(119, 247);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(172, 21);
-            this.textBox7.TabIndex = 21;
+            this.Municipality.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Municipality.Location = new System.Drawing.Point(119, 247);
+            this.Municipality.Name = "Municipality";
+            this.Municipality.Size = new System.Drawing.Size(172, 21);
+            this.Municipality.TabIndex = 21;
             // 
-            // textBox8
+            // CrreationDate
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(119, 206);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(172, 21);
-            this.textBox8.TabIndex = 20;
+            this.CrreationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CrreationDate.Location = new System.Drawing.Point(119, 206);
+            this.CrreationDate.Name = "CrreationDate";
+            this.CrreationDate.Size = new System.Drawing.Size(172, 21);
+            this.CrreationDate.TabIndex = 20;
             // 
-            // textBox9
+            // Age
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(457, 333);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(172, 21);
-            this.textBox9.TabIndex = 31;
+            this.Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age.Location = new System.Drawing.Point(457, 333);
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(172, 21);
+            this.Age.TabIndex = 31;
             // 
-            // textBox10
+            // OrderClass
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(457, 292);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(172, 21);
-            this.textBox10.TabIndex = 30;
+            this.OrderClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderClass.Location = new System.Drawing.Point(457, 292);
+            this.OrderClass.Name = "OrderClass";
+            this.OrderClass.Size = new System.Drawing.Size(172, 21);
+            this.OrderClass.TabIndex = 30;
             // 
-            // textBox11
+            // Clasification
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(457, 247);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(172, 21);
-            this.textBox11.TabIndex = 29;
+            this.Clasification.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clasification.Location = new System.Drawing.Point(457, 247);
+            this.Clasification.Name = "Clasification";
+            this.Clasification.Size = new System.Drawing.Size(172, 21);
+            this.Clasification.TabIndex = 29;
             // 
-            // textBox12
+            // Ocde_Large
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(457, 206);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(172, 21);
-            this.textBox12.TabIndex = 28;
+            this.Ocde_Large.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ocde_Large.Location = new System.Drawing.Point(457, 206);
+            this.Ocde_Large.Name = "Ocde_Large";
+            this.Ocde_Large.Size = new System.Drawing.Size(172, 21);
+            this.Ocde_Large.TabIndex = 28;
             // 
-            // textBox13
+            // Ocde_area
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(457, 165);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(172, 21);
-            this.textBox13.TabIndex = 27;
+            this.Ocde_area.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ocde_area.Location = new System.Drawing.Point(457, 165);
+            this.Ocde_area.Name = "Ocde_area";
+            this.Ocde_area.Size = new System.Drawing.Size(172, 21);
+            this.Ocde_area.TabIndex = 27;
             // 
-            // textBox14
+            // Ocde_Id
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(457, 124);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(172, 21);
-            this.textBox14.TabIndex = 26;
+            this.Ocde_Id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ocde_Id.Location = new System.Drawing.Point(457, 124);
+            this.Ocde_Id.Name = "Ocde_Id";
+            this.Ocde_Id.Size = new System.Drawing.Size(172, 21);
+            this.Ocde_Id.TabIndex = 26;
             // 
-            // textBox15
+            // Dane_Id
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(457, 79);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(172, 21);
-            this.textBox15.TabIndex = 25;
+            this.Dane_Id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dane_Id.Location = new System.Drawing.Point(457, 79);
+            this.Dane_Id.Name = "Dane_Id";
+            this.Dane_Id.Size = new System.Drawing.Size(172, 21);
+            this.Dane_Id.TabIndex = 25;
             // 
-            // textBox16
+            // Region
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(457, 38);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(172, 21);
-            this.textBox16.TabIndex = 24;
+            this.Region.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Region.Location = new System.Drawing.Point(457, 38);
+            this.Region.Name = "Region";
+            this.Region.Size = new System.Drawing.Size(172, 21);
+            this.Region.TabIndex = 24;
             // 
             // label17
             // 
@@ -368,22 +368,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Age);
+            this.Controls.Add(this.OrderClass);
+            this.Controls.Add(this.Clasification);
+            this.Controls.Add(this.Ocde_Large);
+            this.Controls.Add(this.Ocde_area);
+            this.Controls.Add(this.Ocde_Id);
+            this.Controls.Add(this.Dane_Id);
+            this.Controls.Add(this.Region);
+            this.Controls.Add(this.Country);
+            this.Controls.Add(this.Department);
+            this.Controls.Add(this.Municipality);
+            this.Controls.Add(this.CrreationDate);
+            this.Controls.Add(this.name);
+            this.Controls.Add(this.Code);
+            this.Controls.Add(this.Year);
+            this.Controls.Add(this.Announcement);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -426,22 +426,22 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox Announcement;
+        private System.Windows.Forms.TextBox Year;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox Code;
+        private System.Windows.Forms.TextBox Country;
+        private System.Windows.Forms.TextBox Department;
+        private System.Windows.Forms.TextBox Municipality;
+        private System.Windows.Forms.TextBox CrreationDate;
+        private System.Windows.Forms.TextBox Age;
+        private System.Windows.Forms.TextBox OrderClass;
+        private System.Windows.Forms.TextBox Clasification;
+        private System.Windows.Forms.TextBox Ocde_Large;
+        private System.Windows.Forms.TextBox Ocde_area;
+        private System.Windows.Forms.TextBox Ocde_Id;
+        private System.Windows.Forms.TextBox Dane_Id;
+        private System.Windows.Forms.TextBox Region;
         private System.Windows.Forms.Label label17;
     }
 }
