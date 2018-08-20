@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using GMap.NET;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
+using GMap.NET.MapProviders;
+
 namespace WindowsFormsApp1
 {
     public partial class Form_Main : Form
@@ -17,8 +22,8 @@ namespace WindowsFormsApp1
 
         public Form_Main()
         {
-            this.program = new App();
-            this.fSecond = new Form1(program);
+            program = new App();
+            fSecond = new Form1(program);
             InitializeComponent();
            
         }
@@ -30,7 +35,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1(this.program);
+            Form1 fSecond = new Form1(program);
             fSecond.Choose_Panel(Form1.REPORT);
             fSecond.Show();
         }
@@ -46,7 +51,7 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1(this.program);
+            Form1 fSecond = new Form1(program);
             fSecond.Choose_Panel(Form1.GROUP_LIST);
             fSecond.Show();
             fSecond.Edit_Info(true);
@@ -54,20 +59,36 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 fSecond = new Form1(this.program);
+            Form1 fSecond = new Form1(program);
             fSecond.Choose_Panel(Form1.GROUP_INFO);
             fSecond.Show();
             fSecond.Edit_Info(true);
         }
 
-        private void gMapControl1_Load(object sender, EventArgs e)
-        {
-       
-        }
 
         private void uC_GroupList1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+            gMapControl1.MapProvider = GoogleMapProvider.Instance;
+            GMaps.Instance.Mode = AccessMode.ServerOnly;
+            gMapControl1.SetPositionByKeywords("Cali, Colombia");
+            gMapControl1.ShowCenter = false;
+
+            GMapOverlay markers = new GMapOverlay("markers");
+
+            //int totalIG = program.GroupList.Where(i => i.Municipality.Equals(UC_Report.comboBox2,));
+            GMapMarker marker = new GMarkerGoogle(new PointLatLng(48.8617774, 2.349272), GMarkerGoogleType.red_pushpin);
+
+            markers.Markers.Add(marker);
+            
+
+
+
+            gMapControl1.Overlays.Add(markers);
         }
     }
 }

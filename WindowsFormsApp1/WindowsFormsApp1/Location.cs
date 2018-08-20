@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
     {
         public List<InvestigationGroup> GroupList { set; get; }
 
-        public static List<municipality> municipalityList { get; set; }
+        public static List<Municipality> municipalityList { get; set; }
 
 
         public static void generarLocaciones()

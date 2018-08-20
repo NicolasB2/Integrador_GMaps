@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
 
         private Location points;
 
-
         public string Announcement { get; set; }
         public string Year { get; set; }
         public string Code { get; set; }

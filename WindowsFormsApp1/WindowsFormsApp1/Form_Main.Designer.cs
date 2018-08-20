@@ -35,8 +35,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.SuspendLayout();
-            
-
             // 
             // Generate_Report
             // 
@@ -94,9 +92,9 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(242, 12);
+            this.gMapControl1.Location = new System.Drawing.Point(241, 12);
             this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 2;
+            this.gMapControl1.MaxZoom = 18;
             this.gMapControl1.MinZoom = 2;
             this.gMapControl1.MouseWheelZoomEnabled = true;
             this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
@@ -108,9 +106,9 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(460, 417);
+            this.gMapControl1.Size = new System.Drawing.Size(461, 417);
             this.gMapControl1.TabIndex = 4;
-            this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.Zoom = 5D;
             this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // Form_Main

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    public class municipality
+    public class Municipality
     {
         public String Name { get; set; }
         public double y1 { get; set; }
@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         public double y2 { get; set; }
         public double x2 { get; set; }
 
-        public municipality (String name, String cooY1, String cooX1, String cooY2, String cooX2)
+        public Municipality (String name, String cooY1, String cooX1, String cooY2, String cooX2)
         {
             Name = name;
             y1 = Double.Parse(cooY1);
