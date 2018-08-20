@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
         {
             gMapControl1.MapProvider = GoogleMapProvider.Instance;
             GMaps.Instance.Mode = AccessMode.ServerOnly;
-            gMapControl1.SetPositionByKeywords("Cali, Colombia");
+            gMapControl1.SetPositionByKeywords("Cali, Colombia.");
             gMapControl1.ShowCenter = false;
 
             GMapOverlay markers = new GMapOverlay("markers");
