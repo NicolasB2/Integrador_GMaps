@@ -115,7 +115,6 @@
       <DependentUpon>UC_Report.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
-    <None Include="Datos\Municipios.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\App.datasource" />
     <None Include="Properties\DataSources\Compared_Area.datasource" />
