@@ -28,6 +28,9 @@ namespace WindowsFormsApp1
         public int OrderClass { get; set; }
         public int Age { get; set; }
 
+        //*****************
+        //deberia tener un try catch
+        //*******************
         public InvestigationGroup(String[] info)
         {
             Announcement = info[0];

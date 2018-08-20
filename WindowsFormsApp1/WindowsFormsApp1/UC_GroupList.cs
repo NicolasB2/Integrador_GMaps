@@ -16,11 +16,11 @@ namespace WindowsFormsApp1
         private static App app;
         private static Form1 second;
 
-        public UC_GroupList(Form1 interfaz)
+        public UC_GroupList(Form1 Second)
         {
             InitializeComponent();
-            app = new App();
-            second = interfaz;
+            app = Second.program;
+            second = Second;
             app.inicilizarDataBase();
             
 
