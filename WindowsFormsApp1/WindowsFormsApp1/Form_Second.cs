@@ -17,26 +17,31 @@ namespace WindowsFormsApp1
         public static String REPORT = "REPORT";
         public static String GROUP_LIST = "GROUP_LIST";
 
-        public Form1(String type)
+        public Form1()
         {
             InitializeComponent();
-            Choose_Panel(type);
         }
 
-        private void Choose_Panel(String type)
+        public void Choose_Panel(String type)
         {
 
             if (type.Equals(GROUP_INFO))
             {
-                panel1.Show();
+                this.uC_GroupInfo1.Show();
+                this.uC_Report1.Hide();
+                this.uC_GroupList1.Hide();
             }
             else if (type.Equals(REPORT))
             {
-                panel2.Show();
+                this.uC_Report1.Show();
+                this.uC_GroupList1.Hide();
+                this.uC_GroupInfo1.Hide();
             }
             else if (type.Equals(GROUP_LIST))
             {
-                panel3.Show();
+                this.uC_GroupList1.Show();
+                this.uC_GroupInfo1.Hide();
+                this.uC_Report1.Hide();
             }
             
         }
