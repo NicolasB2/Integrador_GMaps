@@ -7,18 +7,25 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-
-
-    public static class Location
+    public class Location
     {
-
-
         public static Dictionary<String, double[]> Coords { get; set; }
 
-
-        public static double[] CalculatePoints(String place)
+        public Location()
         {
-            return Coords[place];
+            Coords = new Dictionary<String, double[]>();
+        }
+
+        public double[] CalculatePoints(String place)
+        {
+            try
+            {
+                return Coords[place];
+            }
+            catch
+            {
+                return null;
+            }
         }
         
     }

@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
+
+    
+
     public class InvestigationGroup
     {
+
+        private Location points;
+
+
         public string Announcement { get; set; }
         public string Year { get; set; }
         public string Code { get; set; }
@@ -29,6 +36,7 @@ namespace WindowsFormsApp1
 
         public InvestigationGroup(String[] info)
         {
+            points = new Location();
             Announcement = info[0];
             Year = info[1];
             Code = info[2];
@@ -46,12 +54,13 @@ namespace WindowsFormsApp1
             OrderClass = int.Parse(info[14]);
             Age = int.Parse(info[15]);
 
-            //generateCoordPoint("");
+            generateCoordPoint(Country);
         }
 
         private double[] generateCoordPoint(String Country)
-        { 
-            return Location.CalculatePoints(Country);
+        {
+
+            return null;
         }
     }
 }

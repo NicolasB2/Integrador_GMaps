@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
         public App()
         {
             GroupList = new List<InvestigationGroup>();
+            Report = new Report(this);
         }
 
         public void inicilizarDataBase()

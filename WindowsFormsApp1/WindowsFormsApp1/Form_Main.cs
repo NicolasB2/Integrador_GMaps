@@ -13,11 +13,14 @@ namespace WindowsFormsApp1
     public partial class Form_Main : Form
     {
         private App program;
+        private Form1 fSecond;
+
         public Form_Main()
         {
             this.program = new App();
+            this.fSecond = new Form1(program);
             InitializeComponent();
-            form2 = new Form1(); 
+            
 
         }
 
