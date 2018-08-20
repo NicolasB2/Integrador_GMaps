@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
             try
             {
                 listadoMunicipios = new List<Municipio>
-                StreamReader sr = new StreamReader(@"C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\Municipios.xlsx");
+                StreamReader sr = new StreamReader(@"C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\ubicacionesMunicipios.txt");
 
                  String line = sr.ReadLine();
 

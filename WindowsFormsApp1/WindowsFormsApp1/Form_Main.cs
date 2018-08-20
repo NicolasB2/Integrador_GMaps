@@ -67,19 +67,44 @@ namespace WindowsFormsApp1
 
         private void gMapControl1_Load(object sender, EventArgs e)
         {
-            gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+           /* gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
             gMapControl1.SetPositionByKeywords("Cali, Colombia");
-            gMapControl1.ShowCenter = false;
+            gMapControl1.ShowCenter = false;*/
 
-            GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
-            GMap.NET.WindowsForms.GMapMarker marker =
+           // GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
+
+           /* GMap.NET.WindowsForms.GMapMarker marker =
                 new GMap.NET.WindowsForms.Markers.GMarkerGoogle(
                     new GMap.NET.PointLatLng(48.8617774, 2.349272),
+                    GMap.NET.WindowsForms.Markers.GMarkerGoogleType.red_pushpin);*/
+
+            int cantidadCI = program.GroupList.Count(n => n.Municipality.Equals(UC_Report.comboBox2.SelectedItem.ToString()));
+
+            Municipio municipio = Location.listadoMunicipios.FirstOrDefault(x => x.Name.equals(UC_Report.comboBox2.SelectedItem.ToString());
+
+            Random random = new Random();
+          
+
+            for (int i = 0; i < cantidadCI; i++)
+            {
+               
+                double x = random.NextDouble() * (municipio.x1 - municipio.x2) + municipio.x2;
+                double y = random.NextDouble() * (municipio.y1 - municipio.y2) + municipio.y2;
+
+                 GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
+
+            GMap.NET.WindowsForms.GMapMarker marker =
+                new GMap.NET.WindowsForms.Markers.GMarkerGoogle(
+                    new GMap.NET.PointLatLng(x, y),
                     GMap.NET.WindowsForms.Markers.GMarkerGoogleType.red_pushpin);
 
-            markers.Markers.Add(marker);
-            gMapControl1.Overlays.Add(markers);
+                markers.Markers.Add(marker);
+                gMapControl1.Overlays.Add(markers);
+            }
+
+           /* markers.Markers.Add(marker);
+            gMapControl1.Overlays.Add(markers);*/
         }
 
         private void uC_GroupList1_Load(object sender, EventArgs e)
