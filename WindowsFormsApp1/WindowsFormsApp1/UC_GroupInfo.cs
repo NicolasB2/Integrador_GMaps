@@ -26,43 +26,43 @@ namespace WindowsFormsApp1
         {
             this.type = type;
             
-            this.textBox1.Enabled = type;
-            this.textBox2.Enabled = type;
-            this.textBox3.Enabled = type;
-            this.textBox4.Enabled = type;
-            this.textBox5.Enabled = type;
-            this.textBox6.Enabled = type;
-            this.textBox7.Enabled = type;
-            this.textBox8.Enabled = type;
-            this.textBox9.Enabled = type;
-            this.textBox10.Enabled = type;
-            this.textBox11.Enabled = type;
-            this.textBox12.Enabled = type;
-            this.textBox13.Enabled = type;
-            this.textBox14.Enabled = type;
-            this.textBox15.Enabled = type;
-            this.textBox16.Enabled = type;
+            this.Announcement.Enabled = type;
+            this.Year.Enabled = type;
+            this.name.Enabled = type;
+            this.Code.Enabled = type;
+            this.Country.Enabled = type;
+            this.Department.Enabled = type;
+            this.Municipality.Enabled = type;
+            this.CrreationDate.Enabled = type;
+            this.Age.Enabled = type;
+            this.OrderClass.Enabled = type;
+            this.Clasification.Enabled = type;
+            this.Ocde_Large.Enabled = type;
+            this.Ocde_area.Enabled = type;
+            this.Ocde_Id.Enabled = type;
+            this.Dane_Id.Enabled = type;
+            this.Region.Enabled = type;
 
         }
 
-        public void datos(InvestigationGroup group)
+        public void Data_Group(InvestigationGroup group)
         {
-            this.textBox1.test =group.
-            this.textBox2.Enabled = type;
-            this.textBox3.Enabled = type;
-            this.textBox4.Enabled = type;
-            this.textBox5.Enabled = type;
-            this.textBox6.Enabled = type;
-            this.textBox7.Enabled = type;
-            this.textBox8.Enabled = type;
-            this.textBox9.Enabled = type;
-            this.textBox10.Enabled = type;
-            this.textBox11.Enabled = type;
-            this.textBox12.Enabled = type;
-            this.textBox13.Enabled = type;
-            this.textBox14.Enabled = type;
-            this.textBox15.Enabled = type;
-            this.textBox16.Enabled = type;
+            this.Announcement.Text = group.Announcement;
+            this.Year.Text = group.Year;
+            this.name.Text = group.Name;
+            this.Code.Text = group.Code;
+            this.Country.Text = group.Country;
+            this.Department.Text = group.Department;
+            this.Municipality.Text = group.Municipality;
+            this.CrreationDate.Text = group.CreationDate;
+            this.Age.Text = group.Age+"";
+            this.OrderClass.Text = group.OrderClass+"";
+            this.Clasification.Text = group.Clasification;
+            this.Ocde_Large.Text = group.OcdeLargeArea;
+            this.Ocde_area.Text = group.OcdeArea;
+            this.Ocde_Id.Text = group.OcdeID;
+            this.Dane_Id.Text = group.DaneID;
+            this.Region.Text = group.Region;
         }
         private void UC_GroupInfo_Load(object sender, EventArgs e)
         {

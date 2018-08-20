@@ -47,11 +47,17 @@ namespace WindowsFormsApp1
             
         }
 
+        public void Send_data_UC_Info(InvestigationGroup group)
+        {
+            uC_GroupInfo1.Data_Group(group);
+        }
+
         public void Edit_Info(bool type)
         {
             uC_GroupInfo1.type_TextBox(type);
         }
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
         }
