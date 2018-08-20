@@ -7,6 +7,20 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+
+    class Compared_City : IEqualityComparer<InvestigationGroup>
+    {
+        public bool Equals(InvestigationGroup x, InvestigationGroup y)
+        {
+            return x.Municipality.Equals(y.Municipality);
+        }
+
+        public int GetHashCode(InvestigationGroup obj)
+        {
+            return obj.Municipality.GetHashCode();
+        }
+    }
+
     class Compared_Region : IEqualityComparer<InvestigationGroup>
     {
         public bool Equals(InvestigationGroup x, InvestigationGroup y)
@@ -61,7 +75,7 @@ namespace WindowsFormsApp1
         //The following methods generate an IEnumerable with the elements needed to apply the second filter
         public IEnumerable<InvestigationGroup> getCitiesFilter()
         {
-            return main.GroupList.Distinct();
+            return main.GroupList.Distinct(new Compared_City());
         }
         public IEnumerable<InvestigationGroup> getRegionsFilter()
         {

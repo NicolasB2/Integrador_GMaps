@@ -26,11 +26,15 @@ namespace WindowsFormsApp1
         //This tells me if any of the groups on the list has been updated. 
         public bool ListUpdated { set; get; }
 
+        public Location Locat{set; get;}
+
         //CONSTRUCTOR
         public App()
         {
             GroupList = new List<InvestigationGroup>();
             Report = new Report(this);
+            Locat = new Location();
+           
             inicilizarDataBase();
         }
 

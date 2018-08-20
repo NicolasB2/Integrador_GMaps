@@ -11,8 +11,6 @@ namespace WindowsFormsApp1
     public class InvestigationGroup
     {
 
-        private Location points;
-
         public string Announcement { get; set; }
         public string Year { get; set; }
         public string Code { get; set; }
@@ -29,14 +27,12 @@ namespace WindowsFormsApp1
         public string Clasification { get; set; }
         public int OrderClass { get; set; }
         public int Age { get; set; }
-        public double[] Coord { get; set;  }
 
         //*****************
         //deberia tener un try catch
         //*******************
         public InvestigationGroup(String[] info)
         {
-            points = new Location();
             Announcement = info[0];
             Year = info[1];
             Code = info[2];

@@ -46,6 +46,9 @@ namespace WindowsFormsApp1
             }
             else if (type.Equals("Clasification")){
                 programe.Report.getClasificationFilter().ToList().ForEach(n => comboBox2.Items.Add(n.Clasification));
+            }else if (type.Equals("Cities"))
+            {
+                programe.Report.getCitiesFilter().ToList().ForEach(n => comboBox2.Items.Add(n.Municipality));
             }
             
            

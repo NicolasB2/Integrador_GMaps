@@ -10,46 +10,50 @@ namespace WindowsFormsApp1
 {
     public class Location
     {
-        public List<InvestigationGroup> GroupList { set; get; }
+        public List<Municipality> MunicipalityList { get; set; }
+ 
 
-        public static List<Municipality> municipalityList { get; set; }
-
-
-        public static void generarLocaciones()
+        public Location()
         {
-           // try
-            //{
-                //listadoMunicipios = new List<Municipio>
-                //StreamReader sr = new StreamReader(@"C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\Municipios.xlsx");
+           MunicipalityList =  generarLocaciones();
+        }
 
-                 //String line = sr.ReadLine();
+        public static List<Municipality> generarLocaciones()
+        {
+            List<Municipality> temporalList = new List<Municipality>();
 
-               // while ((line = sr.ReadLine()) != null)
-            //    {
-            //        String[] atributos = line.Split(';');
+            try
+            {
+            StreamReader sr = new StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\ubicacionesMunicipios.txt");
 
-            //        String nombre = atributos[0];
-            //        String cooY1 = atributos[1];
-            //        String cooX1 = atributos[2];
-            //        String cooY2 = atributos[3];
-            //        String cooX2 = atributos[4];
+                String line = sr.ReadLine();
 
-            //        municipality mun = new municipality(nombre, cooY1, cooX1, cooY2, cooX2);
+                while ((line = sr.ReadLine()) != null)
+                {
+                    String[] atributos = line.Split(';');
 
-            //        //Add element to the municipalityList
-            //        municipalityList.Add(mun);
+                    String nombre = atributos[0];
+                    String cooY1 = atributos[1];
+                    String cooX1 = atributos[2];
+                    String cooY2 = atributos[3];
+                    String cooX2 = atributos[4];
 
-            //        line = sr.ReadLine();
-            //    }
+                    Municipality mun = new Municipality(nombre, cooY1, cooX1, cooY2, cooX2);
 
-            //    sr.Close();
-            //    //Console.ReadLine();
-            //    //Thread.Sleep(4000);
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine("Exception: " + e.Message);
-            //}
+                    //Add element to the municipalityList
+                    temporalList.Add(mun);
+
+                    line = sr.ReadLine();
+                }
+
+                sr.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+
+            return temporalList;
         }
     }
 }
