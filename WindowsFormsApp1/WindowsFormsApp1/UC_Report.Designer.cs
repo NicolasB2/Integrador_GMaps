@@ -38,7 +38,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(248, 52);
+            this.comboBox1.Location = new System.Drawing.Point(209, 36);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(256, 21);
             this.comboBox1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(304, 20);
+            this.label1.Location = new System.Drawing.Point(265, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 4;
@@ -59,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(187, 55);
+            this.label2.Location = new System.Drawing.Point(148, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 5;
@@ -69,7 +69,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(187, 91);
+            this.label3.Location = new System.Drawing.Point(148, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 7;
@@ -79,7 +79,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(248, 88);
+            this.comboBox2.Location = new System.Drawing.Point(209, 72);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(256, 21);
             this.comboBox2.TabIndex = 6;
@@ -94,7 +94,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Name = "UC_Report";
-            this.Size = new System.Drawing.Size(690, 400);
+            this.Size = new System.Drawing.Size(635, 368);
             this.Load += new System.EventHandler(this.UC_Report_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

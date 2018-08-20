@@ -12,15 +12,19 @@ namespace WindowsFormsApp1
 {
     public partial class Form_Main : Form
     {
+
+        public Form1 form2; 
+        
         public Form_Main()
         {
             InitializeComponent();
+            form2 = new Form1(); 
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -28,9 +32,10 @@ namespace WindowsFormsApp1
 
         }
 
+        //Renerate report button
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            form2.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
