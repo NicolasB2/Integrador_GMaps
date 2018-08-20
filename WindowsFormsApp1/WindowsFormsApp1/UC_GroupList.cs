@@ -14,11 +14,16 @@ namespace WindowsFormsApp1
     {
 
         private static App app;
-        public UC_GroupList()
+        private static Form1 second;
+
+        public UC_GroupList(Form1 interfaz)
         {
             InitializeComponent();
             app = new App();
+            second = interfaz;
+            bool type = true;
             app.inicilizarDataBase();
+            
 
             for (int i = 0; i < app.GroupList.Count(); i++)
             {
@@ -49,7 +54,7 @@ namespace WindowsFormsApp1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            button2.Enabled = true;
         }
 
         private void UC_GroupList_Load(object sender, EventArgs e)
@@ -57,9 +62,9 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            second.Choose_Panel("GROUP_INFO");
         }
     }
 }

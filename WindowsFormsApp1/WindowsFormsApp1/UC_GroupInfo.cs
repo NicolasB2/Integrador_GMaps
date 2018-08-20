@@ -15,46 +15,38 @@ namespace WindowsFormsApp1
         public static String VISUALIZAR_INFO = "VISUALIZAR_INFO";
         public static String ACTUALIZAR = "ACTUALIZAR";
         public static String REGISTRAR = "REGISTRAR";
-
+        public bool type;
         public UC_GroupInfo()
         {
+            type = true;
             InitializeComponent();
         }
 
-        public void type_TextBox(string type)
+        public void type_TextBox(bool type)
         {
-            bool x = false;
-            if (type.Equals(ACTUALIZAR)||type.Equals(REGISTRAR))
-            {
-                x = true;
-            }
+            this.type = type;
             
-            this.textBox1.Enabled = x;
-            this.textBox2.Enabled = x;
-            this.textBox3.Enabled = x;
-            this.textBox4.Enabled = x;
-            this.textBox5.Enabled = x;
-            this.textBox6.Enabled = x;
-            this.textBox7.Enabled = x;
-            this.textBox8.Enabled = x;
-            this.textBox9.Enabled = x;
-            this.textBox10.Enabled = x;
-            this.textBox11.Enabled = x;
-            this.textBox12.Enabled = x;
-            this.textBox13.Enabled = x;
-            this.textBox14.Enabled = x;
-            this.textBox15.Enabled = x;
-            this.textBox16.Enabled = x;
+            this.textBox1.Enabled = type;
+            this.textBox2.Enabled = type;
+            this.textBox3.Enabled = type;
+            this.textBox4.Enabled = type;
+            this.textBox5.Enabled = type;
+            this.textBox6.Enabled = type;
+            this.textBox7.Enabled = type;
+            this.textBox8.Enabled = type;
+            this.textBox9.Enabled = type;
+            this.textBox10.Enabled = type;
+            this.textBox11.Enabled = type;
+            this.textBox12.Enabled = type;
+            this.textBox13.Enabled = type;
+            this.textBox14.Enabled = type;
+            this.textBox15.Enabled = type;
+            this.textBox16.Enabled = type;
 
         }
 
 
         private void UC_GroupInfo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
         {
 
         }

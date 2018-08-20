@@ -31,12 +31,13 @@ namespace WindowsFormsApp1
         {
             GroupList = new List<InvestigationGroup>();
             Report = new Report(this);
+            inicilizarDataBase();
         }
 
         public void inicilizarDataBase()
         {
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
 
             //C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt
 

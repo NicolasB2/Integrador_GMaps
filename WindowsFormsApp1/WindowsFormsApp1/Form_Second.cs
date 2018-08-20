@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
                 this.uC_Report1.Show();
                 this.uC_GroupList1.Hide();
                 this.uC_GroupInfo1.Hide();
+
             }
             else if (type.Equals(GROUP_LIST))
             {
@@ -46,6 +47,10 @@ namespace WindowsFormsApp1
             
         }
 
+        public void Edit_Info(bool type)
+        {
+            uC_GroupInfo1.type_TextBox(type);
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
