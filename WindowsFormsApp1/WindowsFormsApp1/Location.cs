@@ -10,21 +10,16 @@ namespace WindowsFormsApp1
 {
     public class Location
     {
+        public List<InvestigationGroup> GroupList { set; get; }
 
-        public static List<Municipio> listadoMunicipios { get; set; }
-        public static Dictionary<String, double[]> Coords { get; set; }
+        public static List<municipality> municipalityList { get; set; }
 
-
-        public static double[] CalculatePoints(String place)
-        {
-            return Coords[place];
-        }
 
         public static void generarLocaciones()
         {
             try
             {
-                listadoMunicipios = new List<Municipio>
+                municipalityList = new List<municipality>();
                 StreamReader sr = new StreamReader(@"C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\Municipios.xlsx");
 
                  String line = sr.ReadLine();
@@ -39,10 +34,10 @@ namespace WindowsFormsApp1
                     String cooY2 = atributos[3];
                     String cooX2 = atributos[4];
 
-                    Municipio mun = new Municipio(nombre, cooY1, cooX1, cooY2, cooX2);
+                    municipality mun = new municipality(nombre, cooY1, cooX1, cooY2, cooX2);
 
-                    //añadir el elemento al arreglo correspondiente
-                    listadoMunicipios.Add(mun);
+                    //Add element to the municipalityList
+                    municipalityList.Add(mun);
 
                     line = sr.ReadLine();
                 }

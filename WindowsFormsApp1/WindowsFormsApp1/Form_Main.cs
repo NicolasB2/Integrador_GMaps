@@ -40,6 +40,8 @@ namespace WindowsFormsApp1
             Form1 fSecond = new Form1(this.program);
             fSecond.Choose_Panel(Form1.GROUP_LIST);
             fSecond.Show();
+            fSecond.Edit_Info(false);
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -47,6 +49,7 @@ namespace WindowsFormsApp1
             Form1 fSecond = new Form1(this.program);
             fSecond.Choose_Panel(Form1.GROUP_LIST);
             fSecond.Show();
+            fSecond.Edit_Info(true);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -54,6 +57,7 @@ namespace WindowsFormsApp1
             Form1 fSecond = new Form1(this.program);
             fSecond.Choose_Panel(Form1.GROUP_INFO);
             fSecond.Show();
+            fSecond.Edit_Info(true);
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)

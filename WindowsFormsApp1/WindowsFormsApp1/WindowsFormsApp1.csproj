@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Municipio.cs" />
+    <Compile Include="municipality.cs" />
     <Compile Include="Graphic.cs" />
     <Compile Include="InvestigationGroup.cs" />
     <Compile Include="Form_Second.cs">
