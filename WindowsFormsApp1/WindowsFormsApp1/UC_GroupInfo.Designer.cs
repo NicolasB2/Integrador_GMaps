@@ -59,8 +59,9 @@
             this.Ocde_area = new System.Windows.Forms.TextBox();
             this.Ocde_Id = new System.Windows.Forms.TextBox();
             this.Dane_Id = new System.Windows.Forms.TextBox();
-            this.Region = new System.Windows.Forms.TextBox();
+            this.region = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -230,7 +231,7 @@
             this.Announcement.Name = "Announcement";
             this.Announcement.Size = new System.Drawing.Size(172, 21);
             this.Announcement.TabIndex = 16;
-            this.Announcement.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Announcement.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // Year
             // 
@@ -344,13 +345,13 @@
             this.Dane_Id.Size = new System.Drawing.Size(172, 21);
             this.Dane_Id.TabIndex = 25;
             // 
-            // Region
+            // region
             // 
-            this.Region.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Region.Location = new System.Drawing.Point(457, 38);
-            this.Region.Name = "Region";
-            this.Region.Size = new System.Drawing.Size(172, 21);
-            this.Region.TabIndex = 24;
+            this.region.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.region.Location = new System.Drawing.Point(457, 38);
+            this.region.Name = "region";
+            this.region.Size = new System.Drawing.Size(172, 21);
+            this.region.TabIndex = 24;
             // 
             // label17
             // 
@@ -361,12 +362,23 @@
             this.label17.Size = new System.Drawing.Size(274, 20);
             this.label17.TabIndex = 32;
             this.label17.Text = "Investigation Group Information";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
+            this.label17.Click += new System.EventHandler(this.Label17_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(272, 381);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "continue";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UC_GroupInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.Age);
             this.Controls.Add(this.OrderClass);
@@ -375,7 +387,7 @@
             this.Controls.Add(this.Ocde_area);
             this.Controls.Add(this.Ocde_Id);
             this.Controls.Add(this.Dane_Id);
-            this.Controls.Add(this.Region);
+            this.Controls.Add(this.region);
             this.Controls.Add(this.Country);
             this.Controls.Add(this.Department);
             this.Controls.Add(this.Municipality);
@@ -441,7 +453,8 @@
         private System.Windows.Forms.TextBox Ocde_area;
         private System.Windows.Forms.TextBox Ocde_Id;
         private System.Windows.Forms.TextBox Dane_Id;
-        private System.Windows.Forms.TextBox Region;
+        private System.Windows.Forms.TextBox region;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button1;
     }
 }

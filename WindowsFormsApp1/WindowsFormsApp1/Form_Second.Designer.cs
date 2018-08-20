@@ -23,12 +23,6 @@ namespace WindowsFormsApp1
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent(App program)
         {
 
@@ -36,7 +30,7 @@ namespace WindowsFormsApp1
 
             this.uC_Report1 = new WindowsFormsApp1.UC_Report(program);
             this.uC_GroupList1 = new WindowsFormsApp1.UC_GroupList(this);
-            this.uC_GroupInfo1 = new WindowsFormsApp1.UC_GroupInfo();
+            this.uC_GroupInfo1 = new WindowsFormsApp1.UC_GroupInfo(this);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,8 +78,6 @@ namespace WindowsFormsApp1
             this.ResumeLayout(false);
 
         }
-
-        #endregion
 
         private Panel panel1;
         private UC_Report uC_Report1;
