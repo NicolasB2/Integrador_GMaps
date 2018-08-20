@@ -47,7 +47,22 @@ namespace WindowsFormsApp1
 
         public void datos(InvestigationGroup group)
         {
-
+            this.textBox1.test =group.
+            this.textBox2.Enabled = type;
+            this.textBox3.Enabled = type;
+            this.textBox4.Enabled = type;
+            this.textBox5.Enabled = type;
+            this.textBox6.Enabled = type;
+            this.textBox7.Enabled = type;
+            this.textBox8.Enabled = type;
+            this.textBox9.Enabled = type;
+            this.textBox10.Enabled = type;
+            this.textBox11.Enabled = type;
+            this.textBox12.Enabled = type;
+            this.textBox13.Enabled = type;
+            this.textBox14.Enabled = type;
+            this.textBox15.Enabled = type;
+            this.textBox16.Enabled = type;
         }
         private void UC_GroupInfo_Load(object sender, EventArgs e)
         {
