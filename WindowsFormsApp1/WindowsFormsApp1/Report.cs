@@ -48,14 +48,9 @@ namespace WindowsFormsApp1
     public class Report
     {
 
-        public static string REPORT_REGIONS = "REPORT_REGIONS";
-        public static string REPORT_CITIES = "REPORT_CITIES";
-        public static string REPORT_IAREAS = "REPORT_IAREAS";
-        public static string REPORT_CLASIFICATION = "REPORT_CLASIFICATION";
-
         private App main;
 
-        Report(App main )
+        public Report(App main )
         {
             this.main = main;
         }
@@ -75,7 +70,7 @@ namespace WindowsFormsApp1
         {
             return main.GroupList.Distinct(new Compared_Area());
         }
-        public IEnumerable<InvestigationGroup> getClasificationFilter(String clasification)
+        public IEnumerable<InvestigationGroup> getClasificationFilter()
         {
             return main.GroupList.Distinct(new Compared_Clasification());
         }

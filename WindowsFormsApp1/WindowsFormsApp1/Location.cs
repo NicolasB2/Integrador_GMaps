@@ -8,9 +8,7 @@ using System.IO;
 
 namespace WindowsFormsApp1
 {
-
-
-    public static class Location
+    public class Location
     {
 
         public static List<Municipio> listadoMunicipios { get; set; }
