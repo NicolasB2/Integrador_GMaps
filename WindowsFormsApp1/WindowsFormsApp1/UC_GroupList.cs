@@ -14,11 +14,15 @@ namespace WindowsFormsApp1
     {
 
         private static App app;
-        public UC_GroupList()
+        private static Form1 second;
+        public Boolean its_update { get; set; }
+        public UC_GroupList(Form1 interfaz)
         {
             InitializeComponent();
             app = new App();
+            second = interfaz;
             app.inicilizarDataBase();
+            
 
             for (int i = 0; i < app.GroupList.Count(); i++)
             {
@@ -59,7 +63,6 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

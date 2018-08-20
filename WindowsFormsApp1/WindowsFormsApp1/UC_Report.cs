@@ -35,16 +35,13 @@ namespace WindowsFormsApp1
             String type = comboBox1.SelectedItem.ToString();
 
             if(type.Equals("Regions")){
-                
-                    MessageBox.Show(programe.Report.getRegionsFilter());
-                
-                programe.Report.getRegionsFilter().ToList().ForEach(n => comboBox2.Items.Add(n));
+                programe.Report.getRegionsFilter().ToList().ForEach(n => comboBox2.Items.Add(n.Region));
             }
             else if(type.Equals("Investigation Areas")){
-                programe.Report.getInvestigationAreasFilter().ToList().ForEach(n => comboBox2.Items.Add(n));
+                programe.Report.getInvestigationAreasFilter().ToList().ForEach(n => comboBox2.Items.Add(n.OcdeArea));
             }
             else if (type.Equals("Clasification")){
-                programe.Report.getClasificationFilter().ToList().ForEach(n => comboBox2.Items.Add(n));
+                programe.Report.getClasificationFilter().ToList().ForEach(n => comboBox2.Items.Add(n.Clasification));
             }
             
            
@@ -54,7 +51,7 @@ namespace WindowsFormsApp1
         {
 
         }
-
+        
         private void label3_Click(object sender, EventArgs e)
         {
 

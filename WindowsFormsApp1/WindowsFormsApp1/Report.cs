@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -15,7 +16,7 @@ namespace WindowsFormsApp1
 
         public int GetHashCode(InvestigationGroup obj)
         {
-            return obj.GetHashCode();
+            return obj.Region.GetHashCode();
         }
     }
 
@@ -28,7 +29,7 @@ namespace WindowsFormsApp1
 
         public int GetHashCode(InvestigationGroup obj)
         {
-            return obj.GetHashCode();
+            return obj.OcdeArea.GetHashCode();
         }
     }
 
@@ -41,7 +42,7 @@ namespace WindowsFormsApp1
 
         public int GetHashCode(InvestigationGroup obj)
         {
-            return obj.GetHashCode();
+            return obj.Clasification.GetHashCode();
         }
     }
 
