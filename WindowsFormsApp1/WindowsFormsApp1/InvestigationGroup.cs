@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    class InvestigationGroup
+    public class InvestigationGroup
     {
         public string Announcement { get; set; }
         public string Year { get; set; }
@@ -25,8 +25,7 @@ namespace WindowsFormsApp1
         public string Clasification { get; set; }
         public int OrderClass { get; set; }
         public int Age { get; set; }
-
-        public Point[] Coord { get; set;  }
+        public double[] Coord { get; set;  }
 
         public InvestigationGroup(String[] info)
         {
@@ -50,7 +49,7 @@ namespace WindowsFormsApp1
             generateCoordPoint("");
         }
 
-        private Point[] generateCoordPoint(String Country)
+        private double[] generateCoordPoint(String Country)
         { 
             return Location.CalculatePoints(Country);
         }

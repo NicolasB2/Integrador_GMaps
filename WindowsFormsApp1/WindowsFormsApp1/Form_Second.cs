@@ -12,9 +12,38 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        public Form1()
+
+        public static String GROUP_INFO = "GROUP_INFO";
+        public static String REPORT = "REPORT";
+        public static String GROUP_LIST = "GROUP_LIST";
+
+        public Form1(App program)
         {
-            InitializeComponent();
+            InitializeComponent(program);
+        }
+
+        public void Choose_Panel(String type)
+        {
+
+            if (type.Equals(GROUP_INFO))
+            {
+                this.uC_GroupInfo1.Show();
+                this.uC_Report1.Hide();
+                this.uC_GroupList1.Hide();
+            }
+            else if (type.Equals(REPORT))
+            {
+                this.uC_Report1.Show();
+                this.uC_GroupList1.Hide();
+                this.uC_GroupInfo1.Hide();
+            }
+            else if (type.Equals(GROUP_LIST))
+            {
+                this.uC_GroupList1.Show();
+                this.uC_GroupInfo1.Hide();
+                this.uC_Report1.Hide();
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -22,12 +51,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void uC_GroupList1_Load(object sender, EventArgs e)
         {
 
         }

@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class UC_Report : UserControl
     {
-        public UC_Report()
+        public UC_Report(App program)
         {
             InitializeComponent();
 
@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            comboBox2.Items.AddRange(null);
         }
 
         private void UC_Report_Load(object sender, EventArgs e)
