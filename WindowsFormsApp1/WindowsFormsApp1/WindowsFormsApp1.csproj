@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Municipio.cs" />
     <Compile Include="Graphic.cs" />
     <Compile Include="InvestigationGroup.cs" />
     <Compile Include="Form_Second.cs">
@@ -113,6 +114,7 @@
     <EmbeddedResource Include="UC_Report.resx">
       <DependentUpon>UC_Report.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datos\Municipios.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\App.datasource" />
     <None Include="Properties\DataSources\Compared_Area.datasource" />

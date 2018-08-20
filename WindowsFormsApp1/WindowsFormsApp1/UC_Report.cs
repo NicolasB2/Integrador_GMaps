@@ -56,5 +56,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
