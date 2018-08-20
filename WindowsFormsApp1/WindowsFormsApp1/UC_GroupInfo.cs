@@ -45,7 +45,10 @@ namespace WindowsFormsApp1
 
         }
 
+        public void datos(InvestigationGroup group)
+        {
 
+        }
         private void UC_GroupInfo_Load(object sender, EventArgs e)
         {
 
