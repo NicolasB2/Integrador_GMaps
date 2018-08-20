@@ -114,6 +114,22 @@
       <DependentUpon>UC_Report.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\App.datasource" />
+    <None Include="Properties\DataSources\Compared_Area.datasource" />
+    <None Include="Properties\DataSources\Compared_Clasification.datasource" />
+    <None Include="Properties\DataSources\Compared_Region.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Form_Main.datasource" />
+    <None Include="Properties\DataSources\Graphic.datasource" />
+    <None Include="Properties\DataSources\InvestigationGroup.datasource" />
+    <None Include="Properties\DataSources\Location.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Report.datasource" />
+    <None Include="Properties\DataSources\UC_GroupInfo.datasource" />
+    <None Include="Properties\DataSources\UC_GroupList.datasource" />
+    <None Include="Properties\DataSources\UC_Report.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

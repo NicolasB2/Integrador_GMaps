@@ -37,57 +37,18 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.uC_Report1);
-            this.panel1.Controls.Add(this.uC_GroupList1);
-            this.panel1.Controls.Add(this.uC_GroupInfo1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(711, 441);
-            this.panel1.TabIndex = 0;
-            // 
-            // uC_Report1
-            // 
-            this.uC_Report1.Location = new System.Drawing.Point(12, 3);
-            this.uC_Report1.Name = "uC_Report1";
-            this.uC_Report1.Size = new System.Drawing.Size(690, 426);
-            this.uC_Report1.TabIndex = 2;
-            // 
-            // uC_GroupList1
-            // 
-            this.uC_GroupList1.Location = new System.Drawing.Point(163, 38);
-            this.uC_GroupList1.Name = "uC_GroupList1";
-            this.uC_GroupList1.Size = new System.Drawing.Size(350, 400);
-            this.uC_GroupList1.TabIndex = 1;
-            // 
-            // uC_GroupInfo1
-            // 
-            this.uC_GroupInfo1.Location = new System.Drawing.Point(12, 3);
-            this.uC_GroupInfo1.Name = "uC_GroupInfo1";
-            this.uC_GroupInfo1.Size = new System.Drawing.Size(690, 400);
-            this.uC_GroupInfo1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 441);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(643, 441);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private UC_Report uC_Report1;
-        private UC_GroupList uC_GroupList1;
-        private UC_GroupInfo uC_GroupInfo1;
     }
 }

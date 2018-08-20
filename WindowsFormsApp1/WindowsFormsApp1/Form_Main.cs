@@ -17,15 +17,19 @@ namespace WindowsFormsApp1
         {
             this.program = new App();
             InitializeComponent();
+            form2 = new Form1(); 
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
 
         private void button1_Click_1(object sender, EventArgs e)
         {
