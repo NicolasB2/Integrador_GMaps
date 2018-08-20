@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class UC_GroupList : UserControl
     {
+
         private static App app;
         public UC_GroupList()
         {
@@ -52,6 +53,11 @@ namespace WindowsFormsApp1
         }
 
         private void UC_GroupList_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

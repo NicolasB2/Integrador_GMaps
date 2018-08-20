@@ -45,5 +45,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void uC_GroupList1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

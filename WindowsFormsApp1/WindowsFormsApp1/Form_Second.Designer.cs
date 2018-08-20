@@ -31,9 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.uC_GroupList1 = new WindowsFormsApp1.UC_GroupList();
             this.uC_Report1 = new WindowsFormsApp1.UC_Report();
             this.uC_GroupInfo1 = new WindowsFormsApp1.UC_GroupInfo();
-            this.uC_GroupList1 = new WindowsFormsApp1.UC_GroupList();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -68,6 +68,14 @@
             this.panel3.Size = new System.Drawing.Size(711, 441);
             this.panel3.TabIndex = 1;
             // 
+            // uC_GroupList1
+            // 
+            this.uC_GroupList1.Location = new System.Drawing.Point(162, 12);
+            this.uC_GroupList1.Name = "uC_GroupList1";
+            this.uC_GroupList1.Size = new System.Drawing.Size(350, 400);
+            this.uC_GroupList1.TabIndex = 0;
+            this.uC_GroupList1.Load += new System.EventHandler(this.uC_GroupList1_Load);
+            // 
             // uC_Report1
             // 
             this.uC_Report1.Location = new System.Drawing.Point(9, 3);
@@ -81,13 +89,6 @@
             this.uC_GroupInfo1.Name = "uC_GroupInfo1";
             this.uC_GroupInfo1.Size = new System.Drawing.Size(690, 400);
             this.uC_GroupInfo1.TabIndex = 0;
-            // 
-            // uC_GroupList1
-            // 
-            this.uC_GroupList1.Location = new System.Drawing.Point(162, 12);
-            this.uC_GroupList1.Name = "uC_GroupList1";
-            this.uC_GroupList1.Size = new System.Drawing.Size(350, 400);
-            this.uC_GroupList1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -111,8 +112,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
 
-        private UC_GroupInfo uC_GroupInfo1;
-        private UC_Report uC_Report1;
-        private UC_GroupList uC_GroupList1;
+        public UC_GroupInfo uC_GroupInfo1;
+        public UC_Report uC_Report1;
+        public UC_GroupList uC_GroupList1;
     }
 }
