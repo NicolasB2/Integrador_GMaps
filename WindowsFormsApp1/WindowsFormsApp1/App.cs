@@ -35,7 +35,10 @@ namespace WindowsFormsApp1
         public void inicilizarDataBase()
         {
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+
+            //C:\Users\Asus\Desktop\repos juanma\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt
+
             int c = 0; 
             while ((line = file.ReadLine()) != null )
             {
