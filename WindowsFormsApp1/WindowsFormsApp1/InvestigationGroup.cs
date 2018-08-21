@@ -49,22 +49,36 @@ namespace WindowsFormsApp1
             Clasification = info[13];
             OrderClass = int.Parse(info[14]);
             Age = int.Parse(info[15]);
-
-            generateCoordPoint(Country);
         }
 
 
         public override string ToString()
         {
-            return this.Name;
+            return Name;
         }
 
-        private double[] generateCoordPoint(String Country)
+        public String All_Data()
         {
 
-            return null;
+            String a = "";
+            a += Announcement+";";
+            a += Year + ";";
+            a += Code + ";";
+            a += Name + ";";
+            a += CreationDate + ";";
+            a += Municipality + ";";
+            a += Department + ";";
+            a += Country + ";";
+            a += Region + ";";
+            a += DaneID + ";";
+            a += OcdeID + ";";
+            a += OcdeArea + ";";
+            a += OcdeLargeArea + ";";
+            a += Clasification + ";";
+            a += OrderClass + ";";
+            a += Age;
+
+            return a;
         }
-
-
     }
 }
