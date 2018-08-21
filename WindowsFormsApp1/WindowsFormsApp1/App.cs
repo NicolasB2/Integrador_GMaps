@@ -34,7 +34,8 @@ namespace WindowsFormsApp1
             GroupList = new List<InvestigationGroup>();
             Report = new Report(this);
             Locat = new Location();
-           
+
+            GroupList.Clear();
             inicilizarDataBase();
         }
 
@@ -57,7 +58,7 @@ namespace WindowsFormsApp1
 
                 }catch(Exception e){
                     e.ToString();
-                 //   MessageBox.Show("Error en la fila: " + c );
+                 //MessageBox.Show("Error en la fila: " + c );
                 }
 
             }
@@ -73,7 +74,6 @@ namespace WindowsFormsApp1
             ListUpdated = true;
         }
 
-        //vyvyukvukvuvuvyu
         public void DeleteInvestigationGroup(InvestigationGroup delete)
         {
             GroupList.Remove(delete);
@@ -82,10 +82,10 @@ namespace WindowsFormsApp1
 
         public void DeleteDataBase()
         {
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
         }
 
-        //this method find and retorn the InvestigationGroup with the name of the parameter
+        //this method find and return the InvestigationGroup with the name of the parameter
         public InvestigationGroup GetGroup(String name)
         {
               IEnumerable <InvestigationGroup> x =  from n in GroupList

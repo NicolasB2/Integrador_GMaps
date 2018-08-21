@@ -5,6 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -26,8 +27,8 @@ namespace WindowsFormsApp1
             {
             StreamReader sr = new StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\ubicacionesMunicipios.txt");
 
-                String line = sr.ReadLine();
-
+                String line;
+                int c = 0;
                 while ((line = sr.ReadLine()) != null)
                 {
                     String[] atributos = line.Split(';');
@@ -39,12 +40,13 @@ namespace WindowsFormsApp1
                     String cooX2 = atributos[4];
 
                     Municipality mun = new Municipality(nombre, cooY1, cooX1, cooY2, cooX2);
-
                     //Add element to the municipalityList
                     temporalList.Add(mun);
 
-                    line = sr.ReadLine();
+                    c++;
                 }
+
+                //MessageBox.Show(temporalList.Count()+"");
 
                 sr.Close();
             }

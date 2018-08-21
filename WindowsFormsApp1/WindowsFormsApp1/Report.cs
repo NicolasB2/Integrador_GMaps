@@ -8,6 +8,8 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
 
+
+
     class Compared_City : IEqualityComparer<InvestigationGroup>
     {
         public bool Equals(InvestigationGroup x, InvestigationGroup y)
@@ -62,12 +64,12 @@ namespace WindowsFormsApp1
 
     public class Report
     {
+        private App app;
 
-        private App main;
-
-        public Report(App main )
+        public Report(App app )
         {
-            this.main = main;
+            this.app = app;
+
         }
 
         //METHODS*******************************************************************************
@@ -75,44 +77,44 @@ namespace WindowsFormsApp1
         //The following methods generate an IEnumerable with the elements needed to apply the second filter
         public IEnumerable<InvestigationGroup> getCitiesFilter()
         {
-            return main.GroupList.Distinct(new Compared_City());
+            return app.GroupList.Distinct(new Compared_City());
         }
         public IEnumerable<InvestigationGroup> getRegionsFilter()
         {
-            return main.GroupList.Distinct(new Compared_Region());
+            return app.GroupList.Distinct(new Compared_Region());
         }
         public IEnumerable<InvestigationGroup> getInvestigationAreasFilter()
         {
-            return main.GroupList.Distinct(new Compared_Area());
+            return app.GroupList.Distinct(new Compared_Area());
         }
         public IEnumerable<InvestigationGroup> getClasificationFilter()
         {
-            return main.GroupList.Distinct(new Compared_Clasification());
+            return app.GroupList.Distinct(new Compared_Clasification());
         }
 
 
         //The following methods generate an IEnumerable with all the InvestigationGroup that fulfilled the two filters
         public IEnumerable<InvestigationGroup> getCitiesReport(String cities)
         {
-            return  from n in main.GroupList
+            return  from n in app.GroupList
                     where n.Country.Equals(cities)
                     select n;
         }
         public IEnumerable<InvestigationGroup> getRegionsReport(String region)
         {
-            return from n in main.GroupList
+            return from n in app.GroupList
                    where n.Region.Equals(region)
                    select n;
         }
         public IEnumerable<InvestigationGroup> getInvestigationAreasReport(String area) 
         {
-            return from n in main.GroupList
+            return from n in app.GroupList
                    where n.OcdeArea.Equals(area)
                    select n;
         }
         public IEnumerable<InvestigationGroup> getClasificationReport(String clasification)
         {
-            return from n in main.GroupList
+            return from n in app.GroupList
                    where n.Clasification.Equals(clasification)
                    select n;
         } 

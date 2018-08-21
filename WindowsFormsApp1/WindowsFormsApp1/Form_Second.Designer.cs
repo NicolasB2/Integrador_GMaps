@@ -74,10 +74,12 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
+
 
         private Panel panel1;
         private UC_Report uC_Report1;
