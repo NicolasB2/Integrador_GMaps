@@ -32,6 +32,11 @@ namespace WindowsFormsApp1
            
         }
 
+        internal void Update_DataBase()
+        {
+            program.UpData_DataBase();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             

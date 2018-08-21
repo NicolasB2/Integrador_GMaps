@@ -85,13 +85,13 @@ namespace WindowsFormsApp1
 
         public void UpData_DataBase()
         {
-            System.IO.StreamWriter file = new System.IO.StreamWriter
-            (@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
-            file.Flush();
+            string ruta = @"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt";
+            
+            System.IO.File.WriteAllText(ruta,String.Empty);
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter(ruta);
             GroupList.ForEach(n=>file.WriteLine(n.All_Data()));
             file.Close();
-
-            MessageBox.Show("casi");
         }
 
         //this method find and retorn the InvestigationGroup with the name of the parameter

@@ -21,7 +21,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
             app = Second.program;
             second = Second;
-            app.inicilizarDataBase();
             
 
             for (int i = 0; i < app.GroupList.Count(); i++)
