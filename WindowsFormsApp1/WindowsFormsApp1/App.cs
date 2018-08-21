@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
         {
             string line;
             System.IO.StreamReader file = new System.IO.StreamReader
-             (@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+             (@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
 
          
             int c = 0; 
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1
 
         public void UpData_DataBase()
         {
-            string ruta = @"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt";
+            string ruta = @"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt";
             
             System.IO.File.WriteAllText(ruta,String.Empty);
 
