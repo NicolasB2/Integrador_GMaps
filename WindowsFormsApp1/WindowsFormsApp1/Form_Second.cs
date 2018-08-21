@@ -29,22 +29,22 @@ namespace WindowsFormsApp1
 
             if (type.Equals(GROUP_INFO))
             {
-                this.uC_GroupInfo1.Show();
-                this.uC_Report1.Hide();
-                this.uC_GroupList1.Hide();
+                uC_GroupInfo1.Show();
+                uC_Report1.Hide();
+                uC_GroupList1.Hide();
             }
             else if (type.Equals(REPORT))
             {
-                this.uC_Report1.Show();
-                this.uC_GroupList1.Hide();
-                this.uC_GroupInfo1.Hide();
+                uC_Report1.Show();
+                uC_GroupList1.Hide();
+                uC_GroupInfo1.Hide();
 
             }
             else if (type.Equals(GROUP_LIST))
             {
-                this.uC_GroupList1.Show();
-                this.uC_GroupInfo1.Hide();
-                this.uC_Report1.Hide();
+                uC_GroupList1.Show();
+                uC_GroupInfo1.Hide();
+                uC_Report1.Hide();
             }
             
         }
@@ -72,6 +72,11 @@ namespace WindowsFormsApp1
         internal void UpDate_InvestigationGroup(String[] group)
         {
             this.program.RegisterGroup(group);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

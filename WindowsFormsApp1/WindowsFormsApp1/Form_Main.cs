@@ -89,41 +89,33 @@ namespace WindowsFormsApp1
             gMapControl1.SetPositionByKeywords("Cali, Colombia.");
             gMapControl1.ShowCenter = false;
 
-
-            GMapMarker marker = new GMarkerGoogle(new PointLatLng(48.8617774, 2.349272), GMarkerGoogleType.red_pushpin);
-            markers.Markers.Add(marker);
-
-            //paintGMap_Reports();
-            gMapControl1.Overlays.Add(markers);
- 
-        }
-
-        public void paintGMap_Reports()
-        {
             Random r = new Random();
-            List<InvestigationGroup> ig_municipalities = new List<InvestigationGroup>();
-
-            //string m_Name = UC_Report.comboBox2.SelectedItem.ToString();
-            string m_Name = "Cali";
-
-            for (int i = 0; i < program.GroupList.Count(); i++)
+            for (int i = 0; i < program.GroupList.Count; i++)
             {
-                if (program.GroupList.ElementAt(i).Municipality.Equals(m_Name))
+                Municipality s = program.Locat.MunicipalityList.Find(b => b.Name.Equals(program.GroupList.ElementAt(i).Municipality));
+
+                if (s == null)
                 {
-                    ig_municipalities.Add(program.GroupList.ElementAt(i));
+                   // MessageBox.Show(program.GroupList.ElementAt(i).Municipality);
+                }
+
+                if (s != null)
+                {
+
+                double x = r.NextDouble() * (s.x1 - s.x2) + s.x2;
+                double y = r.NextDouble() * (s.y1 - s.y2) + s.y2;
+
+                    //if (program.GroupList.ElementAt(i).Region.Equals("Centro Oriente"))
+                   // {
+                GMapMarker marker = new GMarkerGoogle(new PointLatLng(y, x), GMarkerGoogleType.red_pushpin);
+                markers.Markers.Add(marker);
+
+                    //}
                 }
             }
 
-            Municipality m = program.Locat.MunicipalityList.Find(i => i.Name.Equals(m_Name));
-
-            for (int i = 0; i < ig_municipalities.Count(); i++)
-            {    
-                double x = r.NextDouble() * (m.x1 - m.x2) + m.x2;
-                double y = r.NextDouble() * (m.y1 - m.y2) + m.y2;
-
-                GMapMarker marker = new GMarkerGoogle(new PointLatLng(y, x), GMarkerGoogleType.red_pushpin);
-                markers.Markers.Add(marker);
-           }
+            gMapControl1.Overlays.Add(markers);
+ 
         }
     }
 }
