@@ -42,7 +42,8 @@ namespace WindowsFormsApp1
         public void inicilizarDataBase()
         {
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader
+             (@"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
 
          
             int c = 0; 
@@ -62,6 +63,8 @@ namespace WindowsFormsApp1
                 }
 
             }
+
+            file.Close();
         }
 
         //METHODS*******************************************************************************
@@ -80,9 +83,15 @@ namespace WindowsFormsApp1
             
         }
 
-        public void DeleteDataBase()
+        public void UpData_DataBase()
         {
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Sara\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt");
+            string ruta = @"C:\Users\Nicolas\Source\Repos\GMaps-.NET\WindowsFormsApp1\WindowsFormsApp1\Datos\datos.txt";
+            
+            System.IO.File.WriteAllText(ruta,String.Empty);
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter(ruta);
+            GroupList.ForEach(n=>file.WriteLine(n.All_Data()));
+            file.Close();
         }
 
         //this method find and return the InvestigationGroup with the name of the parameter

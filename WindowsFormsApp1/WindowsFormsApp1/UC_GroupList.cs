@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
             for (int i = 0; i < app.GroupList.Count(); i++)
             {
-                listBox1.Items.Add(app.GroupList.ElementAt(i));
+                listBox1.Items.Add(app.GroupList.ElementAt(i).Name);
             }
         }
 
