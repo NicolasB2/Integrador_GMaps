@@ -1,2 +1,2 @@
-# GMaps-.NET
-Workshop of the Class Integrator project I
+# GMaps with .NET
+*Workshop of the Class Integrator project I*
