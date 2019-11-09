@@ -1,2 +1,2 @@
 # GMaps with .NET
-*Workshop of the Class Integrator project I*
+*Workshop about maps in c#
